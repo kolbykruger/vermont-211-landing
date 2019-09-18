@@ -1,0 +1,49 @@
+.blog-bar {
+
+}
+
+.blog-bar .container {
+    background: #fff;
+    padding: 1em;
+}
+
+.blog-bar .container {
+    background: #fff;
+    padding: 1em;
+}
+
+.blog-bar .group {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-bar a {
+    padding: 0.5em;
+    color: inherit;
+    opacity: 0.75;
+    text-decoration: none;
+    transition: $transition-1;
+
+    @include hocus {
+        opacity: 1;
+    }
+}
+
+.blog-bar a:first-of-type {
+    font-weight: 600;
+}
+
+.blog-bar a.active {
+    color: $color-1;
+}
+
+.blog-bar button {
+    padding: 0.5em;
+    outline: none;
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    transition: $transition-1;
+}

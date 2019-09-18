@@ -1,0 +1,117 @@
+.header {
+}
+
+.header .container {
+    position: relative;
+}
+
+.header .group {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header .logo {
+    max-width: 240px;
+}
+
+.header .logo a {
+    display: block;
+}
+
+.header .logo img {
+    width: 100%;
+}
+
+.header .mobile-icons {
+    display: none;
+}
+
+.header .mobile-icons .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.header .mobile-icons a,
+.header .mobile-icons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 100%;
+    color: $color-grey-3;
+    font-size: 2rem;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.header .search_wrap {
+    position: absolute;
+    right: 10px;
+    border: 1px solid $color-grey-2;
+    top: 10px;
+    border-radius: 3px;
+}
+
+.header .search button {
+    position: absolute;
+    background: none;
+    height: 100%;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    color: $color-0;
+    top: 50%;
+    right: 0;
+    padding: 0 10px;
+    line-height: 100%;
+    font-size: 1.2rem;
+    transform: translateY(-50%);
+}
+
+.header .search input {
+    @include fs(14px);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 2px;
+    border: 0;
+    background: $color-grey-1;
+    outline: 0;
+    width: 100%;
+    padding: 8px 30px 8px 8px;
+    color: $color-0;
+    font-style: italic;
+}
+
+@media (max-width: 900px) {
+    .header {
+        height: 72px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .header .logo {
+        max-width: 160px;
+        max-height: 70px;
+        padding: 0 0 0 10px;
+    }
+
+    .header .search {
+        display: none;
+    }
+
+    .header .mobile-icons {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100%;
+    }
+}

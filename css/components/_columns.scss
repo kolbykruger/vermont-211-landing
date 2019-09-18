@@ -1,0 +1,47 @@
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+
+    .container {
+
+    }
+
+    .group {
+        > * {
+            margin-right: 1.5em;
+            width: 100%;
+        }
+        > * + * {
+            margin-right: 0;
+            margin-left: 1.5em;
+        }
+    }
+
+    &.columns-1-1 {
+        .group > * {flex: 1;}
+    }
+
+    &.columns-2-1 {
+        .group > * {flex: 2;}
+        .group > * + * {flex: 1;}
+    }
+
+    &.columns-3-1 {
+        .group > * {flex: 3;}
+        .group > * + * {flex: 1;}
+    }
+
+    &.columns-reverse .group {
+        flex-flow: row-reverse wrap;
+
+        > * {
+            margin-right: 0;
+            margin-left: 1.5em;
+        }
+        > * + * {
+            margin-left: 0;
+            margin-right: 1.5em;
+        }
+    }
+
+}

@@ -1,0 +1,83 @@
+.universal-table {
+    margin: 1em 0;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 0.25em;
+    border: 1px solid $color-grey-1;
+    max-width: 100%;
+}
+
+.universal-table .container {
+    padding: 0;
+}
+
+.universal-table .row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.universal-table .row:nth-of-type(1) {
+    font-weight: 600;
+}
+
+.universal-table .row .col {
+    padding: 1em 1.5em 1em 1em;
+    max-width: 300px;
+    display: none;
+}
+
+.universal-table .row:nth-of-type(odd),
+.universal-table .row .col:nth-of-type(even) {
+    background: rgba(14, 30, 37, .02);
+}
+
+.universal-table .row .col .title {
+    display: none;
+}
+@media (max-width: 900px) {
+    .universal-table {
+        border: none;
+    }
+    .universal-table .container {
+        display: flex;
+        flex-flow: row wrap;
+        border: none;
+        margin: 0 -1em;
+    }
+
+    .universal-table .row {
+        padding: 1em;
+        flex-flow: row wrap;
+        width: calc(50% - 1em);
+        border-radius: 0.25em;
+        margin: 0.5em;
+    }
+
+    .universal-table .row:nth-of-type(odd),
+    .universal-table .row .col:nth-of-type(even) {
+        background: none;
+    }
+    .universal-table .row,
+    .universal-table .row:nth-of-type(odd) {
+        background: rgba(14, 30, 37, 0.02);
+    }
+
+    .universal-table .row:nth-of-type(1) {
+        display: none;
+    }
+
+    .universal-table .row .col {
+        padding: 0.25em;
+        width: 100% !important;
+    }
+
+    .universal-table .row .col .title {
+        display: inline;
+        font-weight: 600;
+    }
+}
+@media (max-width: 600px) {
+    .universal-table .row {
+        width: calc(100% - 2em);
+    }
+}

@@ -1,0 +1,15 @@
+.introduction {
+
+}
+
+.introduction .container {
+    max-width: 960px;
+    padding: 1em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .introduction {
+        margin: 1em auto;
+    }
+}

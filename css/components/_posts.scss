@@ -1,0 +1,33 @@
+.pageheading + section {
+    margin: 0;
+}
+
+.pageheading + .post-meta + section {
+    margin: 0;
+}
+
+.post-hero {
+    margin-bottom: 1em;
+}
+
+.post-hero img {
+    width: 100%;
+}
+
+.post-meta {
+
+}
+
+.post-meta .meta {
+    margin: 0.25em 0;
+}
+
+.post-meta .meta i {
+    opacity: 0.5;
+    margin-right: 0.25em;
+}
+
+.post-meta .meta a {
+    color: inherit;
+    text-decoration: none;
+}

@@ -1,0 +1,40 @@
+//Variables
+@import 'variables/functions';
+@import 'variables/variables';
+
+//Vendors
+@import 'vendors/formstack';
+@import 'vendors/tinymce';
+
+//Components
+    //Global
+    @import 'components/general';
+    @import 'components/header';
+    @import 'components/buttons';
+    @import 'components/social-icons';
+    @import 'components/nav';
+    @import 'components/mobile_nav';
+    @import 'components/search';
+    @import 'components/pageheading';
+    @import 'components/columns';
+    @import 'components/sidebar';
+
+    //Individual
+    @import 'components/slideshow';
+    @import 'components/slick-arrows';
+    @import 'components/slick-dots';
+    @import 'components/features';
+    @import 'components/blog';
+    @import 'components/blog_bar';
+    @import 'components/posts';
+    @import 'components/post-meta';
+    @import 'components/tags';
+    @import 'components/instagram';
+    @import 'components/introduction';
+    @import 'components/footer';
+
+    //Universal Blocks
+    @import 'components/universal-blocks/universal-alt-rows';
+    @import 'components/universal-blocks/universal-slideshow';
+    @import 'components/universal-blocks/universal-table';
+    @import 'components/universal-blocks/universal-img-grid';
