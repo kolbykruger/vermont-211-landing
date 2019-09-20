@@ -24,18 +24,14 @@ $('iframe[src*="youtube"]').wrap('<div class="responsiveIframe"/>');
     });
 
 	$('.navicon').click(function() {
-	    if($('.mobile-nav').is(':visible')){
-    	    $('.mobile-nav').fadeOut(100).attr('aria-hidden', 'true').attr('aria-expanded', 'false');
-    		$('body,html').css({'overflow':'auto','height':'auto'});
-    		$('.header').css({'position':'relative','z-index':'0'});
-    		$('.navicon').find('i').attr( "class", "fal fa-bars");
-    		$('button.navicon').attr( "aria-label", "Open Mobile Menu");
+	    if($('.mobile_nav').is(':visible')){
+    	    	$('.mobile_nav').attr('aria-expanded', 'false');
+    		$('body').removeClass('menu-open');
+    		$('.navicon').attr( "aria-label", "Open Mobile Menu");
 	    }else{
-	        $('.mobile-nav').fadeIn(400).attr('aria-hidden', 'false').attr('aria-expanded', 'true');
-	        $('body,html').css({'overflow':'hidden','height':'0'});
-	        $('.header').css({'position':'fixed','z-index':'9999'});
-	        $('.navicon').find('i').attr( "class", "fal fa-times");
-	        $('button.navicon').attr( "aria-label", "Close Mobile Menu");
+	        $('.mobile_nav').attr('aria-expanded', 'true');
+	        $('body').addClass('menu-open');
+	        $('.navicon').attr( "aria-label", "Close Mobile Menu");
 	    }
 	});
 
