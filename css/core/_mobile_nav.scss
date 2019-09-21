@@ -12,10 +12,16 @@
 
 .mobile_nav .container {
     padding: 0;
+    height: 100%;
 }
 
 .mobile_nav ul.top {
-    padding-bottom: 6em;
+    background: $color-grey-1;
+    padding-bottom: 5em;
+}
+
+.mobile_nav ul.top > li > a {
+    background: #fff;
 }
 
 .mobile_nav ul {
@@ -35,7 +41,6 @@
 }
 
 .mobile_nav li a {
-    font-size: 1.25rem;
     display: block;
     padding: 1.25em;
     color: inherit;
@@ -45,7 +50,7 @@
 }
 
 .mobile_nav li {
-    border-top: 1px solid #ddd;
+    margin-bottom: 1px;
 }
 
 .mobile_nav .trigger {
@@ -65,9 +70,8 @@
     justify-content: center;
     align-items: center;
     background: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: none;
-    border-left: 1px solid #ddd;
     outline: none;
     cursor: pointer;
 }
@@ -85,52 +89,11 @@
 
 .mobile_nav .drop {
     background: $color-grey-1;
-}
-
-.mobile_nav .drop li {
     border-left: 10px solid $color-1;
 }
 
 .mobile_nav .drop li a {
     width: 100%;
-}
-
-.mobile_nav .mobile_search {
-    height: 100%;
-    max-height: 0;
-    transition: max-height 0.15s ease-in-out;
-    overflow: hidden;
-}
-
-.mobile_nav .mobile_search button {
-    position: absolute;
-    background: none;
-    cursor: pointer;
-    outline: 0;
-    border: 0;
-    top: 0;
-    right: 0;
-    height: 100%;
-    font-size: 1.2rem;
-    width: 3.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mobile_nav .mobile_search input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0;
-    border: none;
-    background: $color-grey-1;
-    outline: 0;
-    width: 100%;
-    padding: 1.5em;
-    font-style: italic;
-    font-family: inherit;
-    font-size: inherit;
 }
 
 .mobile_nav .mobile-icons {
