@@ -6,7 +6,7 @@
     overflow-x: auto;
 }
 
-.universal-table table {
+table {
     width: 100%;
     display: table;
     border-collapse: collapse;
@@ -14,15 +14,15 @@
     background: #fff;
 }
 
-.universal-table table thead {
-    
+table thead {
+
 }
 
-.universal-table table thead tr {
+table thead tr {
     text-align: left;
 }
 
-.universal-table table th {
+table th {
     border-style: solid;
     border-width: 1px;
     border-color: #ddd;
@@ -30,11 +30,11 @@
     font-weight: bold;
 }
 
-.universal-table table tr {
+table tr {
     text-align: left;
 }
 
-.universal-table table td {
+table td {
     border-style: solid;
     border-width: 1px;
     border-color: #ddd;
