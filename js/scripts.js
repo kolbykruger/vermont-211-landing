@@ -34,23 +34,24 @@ $('.slide').each(function(){
 });
 
 //Universal Tables
-$('.universal-table .row:first .col').each(function(){
-    let title = $(this).text();
-    let idx = $(this).data('idx');
-    $('.universal-table .row:not(:first) .col[data-idx="'+idx+'"]').prepend('<span class="title">'+title+': </span>');
-    if(title){
-        $('.universal-table .row .col[data-idx="'+idx+'"]').show();
-    }
-});
-
-for(let i=0; i < $('.universal-table .row:first .col').length; i++){
-    let widest = '0';
-    $('.universal-table .row .col[data-idx="'+i+'"]').each(function(){
-        let idx = $(this).data('idx');
-        if( $(this).width() > widest){
-            widest = $(this).width();
-        }
-    });
-    $('.universal-table .row .col[data-idx="'+i+'"]').width(Math.round(widest)+10);
-}
+$('table').wrap( "<div class='universal-table'></div>" );
+// $('.universal-table .row:first .col').each(function(){
+//     let title = $(this).text();
+//     let idx = $(this).data('idx');
+//     $('.universal-table .row:not(:first) .col[data-idx="'+idx+'"]').prepend('<span class="title">'+title+': </span>');
+//     if(title){
+//         $('.universal-table .row .col[data-idx="'+idx+'"]').show();
+//     }
+// });
+//
+// for(let i=0; i < $('.universal-table .row:first .col').length; i++){
+//     let widest = '0';
+//     $('.universal-table .row .col[data-idx="'+i+'"]').each(function(){
+//         let idx = $(this).data('idx');
+//         if( $(this).width() > widest){
+//             widest = $(this).width();
+//         }
+//     });
+//     $('.universal-table .row .col[data-idx="'+i+'"]').width(Math.round(widest)+10);
+// }
 //END--Universal Tables
