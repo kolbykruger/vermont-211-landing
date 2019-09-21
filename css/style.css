@@ -1075,13 +1075,20 @@ footer .ewd img {
   align-items: flex-start;
 }
 
-.columns > .content {
-  flex: 4;
+.columns.column-half > * {
+  width: 50%;
+  min-width: 300px;
 }
 
-.columns > .sidebar {
-  flex: 1;
+.columns.column-sidebar > *:first-of-type {
+  max-width: 800px;
+  width: 100%;
+}
+
+.columns.column-sidebar > *:last-of-type {
   min-width: 300px;
+  width: 100%;
+  margin-left: 3em;
 }
 
 .search {
