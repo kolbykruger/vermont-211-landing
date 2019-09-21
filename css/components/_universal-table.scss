@@ -14,11 +14,11 @@
     background: #fff;
 }
 
-.universal-table table thead tr {
-    text-align: left;
+.universal-table table thead {
+    
 }
 
-.universal-table table tr {
+.universal-table table thead tr {
     text-align: left;
 }
 
@@ -28,6 +28,10 @@
     border-color: #ddd;
     padding: 1rem;
     font-weight: bold;
+}
+
+.universal-table table tr {
+    text-align: left;
 }
 
 .universal-table table td {
