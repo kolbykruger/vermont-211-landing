@@ -1576,6 +1576,9 @@ input[type="submit"].button {
 }
 
 .blog .summary {
+  font-size: 16px;
+  font-size: 1rem;
+  display: none;
   padding-top: 1em;
 }
 
