@@ -89,11 +89,15 @@
 
 .mobile_nav .drop {
     background: $color-grey-1;
-    border-left: 10px solid $color-1;
+    border-left: 0.5em solid $color-1;
 }
 
 .mobile_nav .drop li a {
     width: 100%;
+}
+
+.mobile_nav .drop li:not(:last-of-type) {
+    border-bottom: 1px solid #fff;
 }
 
 .mobile_nav .mobile-icons {
