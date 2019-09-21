@@ -46,7 +46,7 @@ p {
     @include fs(16px);
     @include fluid('font-size', 1rem, 1.25rem);
     @include fluid('line-height', 1.6em, 1.8em);
-    margin: 0 0 16px;
+    margin: 0 0 0.5em;
     font-weight: 400;
     line-height: 1.6;
 }
