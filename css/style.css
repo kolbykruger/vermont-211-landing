@@ -919,11 +919,15 @@ hr::before {
 
 .mobile_nav .drop {
   background: #f1f2f3;
-  border-left: 10px solid #ef4538;
+  border-left: 0.5em solid #ef4538;
 }
 
 .mobile_nav .drop li a {
   width: 100%;
+}
+
+.mobile_nav .drop li:not(:last-of-type) {
+  border-bottom: 1px solid #fff;
 }
 
 .mobile_nav .mobile-icons {
