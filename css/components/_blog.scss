@@ -54,21 +54,21 @@
 }
 
 /* First Blog */
-.blog-special .post:first-of-type {
+.blog-layout .post:first-of-type {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.blog-special .post:first-of-type > * {
+.blog-layout .post:first-of-type > * {
     width: 50%;
 }
 
-.blog-special .post:first-of-type .cover {
+.blog-layout .post:first-of-type .cover {
     order: 1;
 }
 
-.blog-special .post:first-of-type .info {
+.blog-layout .post:first-of-type .info {
     padding: 2em;
     text-align: left;
 }
