@@ -1090,6 +1090,7 @@ footer .ewd img {
 .columns.column-sidebar > *:last-of-type {
   width: 300px;
   margin-left: 3em;
+  margin-top: 3em;
 }
 
 .search {
