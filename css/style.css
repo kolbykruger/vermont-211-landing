@@ -1077,8 +1077,12 @@ footer .ewd img {
   margin: 0 auto;
 }
 
+.columns.column-half {
+  align-items: stretch;
+}
+
 .columns.column-half > * {
-  width: 50%;
+  flex: 1;
   min-width: 300px;
 }
 
