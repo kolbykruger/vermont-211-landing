@@ -1793,7 +1793,8 @@ input[type="submit"].button {
 }
 
 table {
-  width: 100%;
+  width: 100% !important;
+  height: auto !important;
   display: table;
   background: #fff;
   border-color: #f1f2f3;
