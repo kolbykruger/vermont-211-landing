@@ -1795,9 +1795,10 @@ input[type="submit"].button {
 table {
   width: 100%;
   display: table;
+  background: #fff;
+  border-color: #f1f2f3;
   border-collapse: collapse;
   border-spacing: 0;
-  background: #fff;
 }
 
 table thead tr {
@@ -1807,7 +1808,7 @@ table thead tr {
 table th {
   border-style: solid;
   border-width: 1px;
-  border-color: #ddd;
+  border-color: inherit;
   padding: 1rem;
   font-weight: bold;
 }
@@ -1819,7 +1820,7 @@ table tr {
 table td {
   border-style: solid;
   border-width: 1px;
-  border-color: #ddd;
+  border-color: inherit;
   padding: 1rem;
   white-space: nowrap;
 }
