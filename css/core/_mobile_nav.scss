@@ -6,13 +6,13 @@
     height: 100%;
     opacity: 0;
     z-index: -1;
-    background: #fff;
     transition: 250ms ease;
 }
 
 .mobile_nav .container {
     padding: 0;
     height: 100%;
+    background: #f1f2f3;
 }
 
 .mobile_nav .mobile_nav_overlay {
@@ -32,7 +32,6 @@
     padding: 1em;
     min-height: 5em;
     margin-bottom: 1px;
-    background: #fff;
 }
 
 .mobile_nav .mobile-icons a,
