@@ -607,6 +607,10 @@ blockquote::after {
   bottom: 0.5em;
 }
 
+address {
+  font-style: normal;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -1182,6 +1186,25 @@ p.simplesearch-results,
 
 .search-result .cover img {
   width: 100%;
+}
+
+.contact .container {
+  padding: 0;
+  background: #fff;
+  border-radius: 0.25em;
+}
+
+.contact .details,
+.contact .form {
+  padding: 3em;
+}
+
+.contact .details {
+  background: rgba(0, 0, 0, 0.015);
+}
+
+.contact .details .section {
+  margin-bottom: 2em;
 }
 
 .social-icons {
