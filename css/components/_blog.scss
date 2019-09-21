@@ -51,6 +51,7 @@
 
 .blog .summary {
     @include fs(16px);
+    display: none;
     padding-top: 1em;
 }
 
