@@ -85,7 +85,8 @@
 // }
 
 /* Search Results */
-.simplesearch-results {
+p.simplesearch-results,
+.simplesearch-paging {
     margin: 1em auto;
 }
 
@@ -97,8 +98,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 0.5em;
-    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
     border-bottom: 1px solid #ddd;
 }
 
