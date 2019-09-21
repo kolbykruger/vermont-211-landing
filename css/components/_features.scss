@@ -46,7 +46,9 @@
 }
 
 @media (max-width: 768px) {
-
+    .features .group {
+        margin: 0;
+    }
 }
 
 @media (max-width: 640px) {

@@ -11,7 +11,7 @@
 }
 
 .blog .container > .group {
-    // margin: 0 -2em;
+    margin: 0 -2em;
 }
 
 .blog a {
@@ -71,4 +71,14 @@
 .blog-layout .post:first-of-type .info {
     padding: 2em;
     text-align: left;
+}
+
+@media (max-width: 768px) {
+    .blog .container > .group {
+        margin: 0;
+    }
+}
+
+@media (max-width: 640px) {
+
 }
