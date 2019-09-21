@@ -1,0 +1,15 @@
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.columns > .content {
+    flex: 4;
+}
+
+.columns > .sidebar {
+    flex: 1;
+    min-width: 300px;
+}
