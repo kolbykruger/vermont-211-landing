@@ -1085,6 +1085,7 @@ footer .ewd img {
 }
 
 .search {
+  position: relative;
   min-width: 200px;
   max-width: 600px;
 }
@@ -1118,7 +1119,7 @@ footer .ewd img {
   font-size: 0.875rem;
   border-radius: 3px;
   border: 1px solid #ddd;
-  background: #f1f2f3;
+  background: #fff;
   outline: 0;
   width: 100%;
   padding: 0.75em;
@@ -1131,12 +1132,22 @@ footer .ewd img {
 }
 
 /* Search Results */
+.simplesearch-results {
+  margin: 1em auto;
+}
+
+.simplesearch-highlight {
+  font-weight: 600;
+  color: #ef4538;
+}
+
 .search-result {
   position: relative;
   display: flex;
   align-items: center;
-  margin: 0.5em 0;
-  border-radius: 0.25em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #ddd;
 }
 
 .search-result .cover {
