@@ -1073,6 +1073,8 @@ footer .ewd img {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .columns.column-half > * {
