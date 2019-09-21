@@ -891,7 +891,7 @@ hr::before {
 
 .mobile_nav .trigger a {
   position: relative;
-  width: calc(100vw - 3.5em);
+  width: calc(100% - 3.5em);
 }
 
 .mobile_nav .trigger button {
