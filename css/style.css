@@ -739,6 +739,7 @@ hr::before {
 
 .nav ul {
   overflow: unset;
+  padding: 0;
 }
 
 .nav li {
