@@ -2,8 +2,23 @@
 
 }
 
-.contact .details {
+.contact .container {
+    padding: 0;
+    background: #fff;
+    border-radius: 0.25em;
+}
 
+.contact .details,
+.contact .form {
+    padding: 3em;
+}
+
+.contact .details {
+    background: rgba(0,0,0,0.015);
+}
+
+.contact .details .section {
+    margin-bottom: 2em;
 }
 
 .contact .form {
