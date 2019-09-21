@@ -50,6 +50,7 @@
 }
 
 .blog .summary {
+    @include fs(16px);
     padding-top: 1em;
 }
 
