@@ -180,6 +180,18 @@ hr::before {
     letter-spacing: 0.6em;
 }
 
+.reset {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
 ::selection {
   background: $color-1;
   color: #fff;
