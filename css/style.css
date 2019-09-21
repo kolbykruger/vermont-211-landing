@@ -1804,16 +1804,23 @@ input[type="submit"].button {
   text-align: left;
 }
 
+.universal-table table th {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ddd;
+  padding: 1rem;
+  font-weight: bold;
+}
+
 .universal-table table tr {
   text-align: left;
 }
 
-.universal-table table th {
+.universal-table table td {
   border-style: solid;
   border-width: 1px;
-  border-color: #f1f3f5;
+  border-color: #ddd;
   padding: 1rem;
-  font-weight: bold;
 }
 
 .universal-img-grid {
