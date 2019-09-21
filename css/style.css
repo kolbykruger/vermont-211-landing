@@ -1567,6 +1567,12 @@ input[type="submit"].button {
   opacity: 0.9;
 }
 
+@media (max-width: 768px) {
+  .features .group {
+    margin: 0;
+  }
+}
+
 .blog {
   margin: 0 auto;
 }
@@ -1628,6 +1634,12 @@ input[type="submit"].button {
 .blog-layout .post:first-of-type .info {
   padding: 2em;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+  .blog .container > .group {
+    margin: 0;
+  }
 }
 
 .blog-bar .container {
