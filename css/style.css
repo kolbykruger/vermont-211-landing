@@ -713,18 +713,13 @@ hr::before {
 }
 
 @media (max-width: 900px) {
-  .header {
-    height: 72px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+  .header .group {
     align-items: center;
-    margin: 0 auto;
   }
   .header .logo {
     max-width: 160px;
     max-height: 70px;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 1em;
   }
   .header .search {
     display: none;
