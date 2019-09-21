@@ -1,17 +1,32 @@
-.search {
-    display: flex;
-    position: relative;
-    width: 100%;
+.search button {
+    position: absolute;
+    background: none;
     height: 100%;
-    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    color: $color-0;
+    top: 50%;
+    right: 0;
+    padding: 0 10px;
+    line-height: 100%;
+    font-size: 1.2rem;
+    transform: translateY(-50%);
 }
 
-.search .search_label {
-    position: absolute !important;
-    left: 0 !important;
-    bottom: -1px !important;
-    z-index: -1 !important;
-    opacity: 0;
+.search input {
+    @include fs(14px);
+    border-radius: 3px;
+    border: 0;
+    background: $color-grey-1;
+    outline: 0;
+    width: 100%;
+    padding: 8px 30px 8px 8px;
+    color: $color-0;
+    font-style: italic;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .search .autocomplete-items {
