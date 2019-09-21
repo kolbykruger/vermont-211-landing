@@ -1683,21 +1683,11 @@ input[type="submit"].button {
 }
 
 .post-meta .meta {
-  margin: 0.25em 0;
-}
-
-.post-meta .meta i {
-  opacity: 0.5;
-  margin-right: 0.25em;
+  margin-bottom: 1em;
 }
 
 .post-meta .meta a {
-  color: inherit;
   text-decoration: none;
-}
-
-.post-meta .meta {
-  margin-bottom: 1em;
 }
 
 .post-meta .meta .label {
