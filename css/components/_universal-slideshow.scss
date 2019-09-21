@@ -1,0 +1,42 @@
+.universal-slideshow {
+    margin: 1em auto;
+}
+
+.universal-slideshow .container {
+    display: none;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    user-select: none;
+    overflow: hidden;
+}
+
+.universal-slideshow .slick-initialized {
+    display: block;
+}
+
+.universal-slideshow .slide {
+    position: relative;
+}
+
+.universal-slideshow .slide a {
+    text-decoration: none;
+    outline: none;
+}
+
+.universal-slideshow .slide a {
+    width: 100%;
+    height: auto;
+}
+
+.universal-slideshow .slide .caption {
+    padding: 1em;
+}
+
+.universal-slideshow .slick-dots > li:only-child {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+}

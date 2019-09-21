@@ -1,0 +1,50 @@
+.universal-alt-rows {
+    margin: 1em auto;
+}
+
+.universal-alt-rows .container {
+    padding: 0;
+}
+
+.universal-alt-rows .item {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0 auto 3em;
+}
+
+.universal-alt-rows .item .image {
+    min-width: 275px;
+    flex: 2;
+}
+
+.universal-alt-rows .item .image img {
+    width: 100%;
+}
+
+.universal-alt-rows .item .text {
+    flex: 3;
+    margin-left: 2em;
+}
+
+.universal-alt-rows .item:nth-of-type(even) .text {
+    margin-left: 0;
+    margin-right: 2em;
+    order: -1;
+}
+
+@media (max-width: 900px) {
+    .universal-alt-rows .item {
+        display: block;
+    }
+
+    .universal-alt-rows .item .image {
+        max-width: 100%;
+    }
+
+    .universal-alt-rows .item .text {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1em;
+    }
+}
