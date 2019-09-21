@@ -7,25 +7,25 @@
     margin: 0 auto;
 }
 
-.columns.column-half {
+.columns.columns-half {
     align-items: stretch;
 }
 
-.columns.column-half > * {
+.columns.columns-half > * {
     flex: 1;
     min-width: 300px;
 }
 
-.columns.column-sidebar > *:first-of-type {
+.columns.columns-sidebar > *:first-of-type {
     max-width: 800px;
     width: 100%;
 }
 
-.columns.column-sidebar > *:last-of-type {
+.columns.columns-sidebar > *:last-of-type {
     width: 300px;
     margin-left: 3em;
 }
 
-.columns.column-sidebar > * > section:first-of-type {
+.columns.columns-sidebar > * > section:first-of-type {
     margin-top: 0;
 }
