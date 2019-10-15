@@ -5,27 +5,30 @@
     align-items: flex-start;
     max-width: $container-width;
     margin: 0 auto;
-}
 
-.columns.columns-half {
-    align-items: stretch;
-}
+    &.columns-half {
+        align-items: stretch;
 
-.columns.columns-half > * {
-    flex: 1;
-    min-width: 300px;
-}
+        > * {
+            flex: 1;
+            min-width: 300px;
+        }
+    }
 
-.columns.columns-sidebar > *:first-of-type {
-    max-width: 800px;
-    width: 100%;
-}
+    &.columns-sidebar{
 
-.columns.columns-sidebar > *:last-of-type {
-    width: 300px;
-    margin-left: 3em;
-}
+        > *:first-of-type {
+            max-width: 800px;
+            width: 100%;
+        }
 
-.columns.columns-sidebar > * > section:first-of-type {
-    margin-top: 0;
+        > *:last-of-type {
+            width: 300px;
+            margin-left: 3em;
+        }
+
+        > * > section:first-of-type {
+            margin-top: 0;
+        }
+    }
 }
