@@ -1,26 +1,27 @@
 .contact {
 
-}
+	.container {
+	    padding: 0;
+	    background: #fff;
+	    border-radius: 0.25em;
+	}
 
-.contact .container {
-    padding: 0;
-    background: #fff;
-    border-radius: 0.25em;
-}
+	.details,
+	.form {
+	    padding: 3em;
+	}
 
-.contact .details,
-.contact .form {
-    padding: 3em;
-}
+	.details {
+	    background: rgba(0,0,0,0.015);
 
-.contact .details {
-    background: rgba(0,0,0,0.015);
-}
+		.section {
+		    margin-bottom: 2em;
+		}
 
-.contact .details .section {
-    margin-bottom: 2em;
-}
+	}
 
-.contact .form {
+	.form {
+
+	}
 
 }
