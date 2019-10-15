@@ -1,70 +1,36 @@
 footer {
     width: 100%;
-    background: #f8f8f8;
-    padding: 10px;
-    margin: 20px 0 0;
-}
+    background: $color-grey-2;
+    padding: 1em;
+    margin: 1em 0 0;
 
-footer .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    text-align: center;
-    color: rgba(0,0,0,.84);
-}
+    .container {
+        text-align: center;
+        color: $color-0;
+    }
 
-footer a {
-    color: rgba(0,0,0,.84);
-}
+    a {
+        color: $color-0;
+    }
 
-footer .social {
-    @include fs(20px);
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
-}
+    .address {
+        margin: 0 auto 5px;
+    }
 
-footer .social a {
-    margin: 0 5px;
-    position: relative;
-    background: rgba(0,0,0,1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    color: #fff;
-    text-decoration: none;
-    width: 2em;
-}
+    .contact {
+        margin: 0 auto 5px;
+    }
 
-footer .social a:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
+    .copyright {
+        margin: 0 auto 5px;
+    }
 
-footer .social a:hover {
-    background: rgba(0,0,0,.6);
-}
+    .ewd {
+        margin: 0 auto 5px;
+        width: 200px;
 
-footer .address {
-    margin: 0 auto 5px;
-}
-
-footer .contact {
-    margin: 0 auto 5px;
-}
-
-footer .copyright {
-    margin: 0 auto 5px;
-}
-
-footer .ewd {
-    margin: 0 auto 5px;
-    width: 200px;
-}
-
-footer .ewd img {
-    width: 100%;
+        img {
+            width: 100%;
+        }
+    }
 }
