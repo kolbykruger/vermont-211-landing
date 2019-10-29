@@ -46,6 +46,10 @@
     line-height: inherit !important;
 }
 
+.fsBody form {
+    float: none !important;
+}
+
 .fsBody .fsSection:not(:last-of-type) {
     border-bottom: 1px solid #ccc;
     padding-bottom: 2em;
