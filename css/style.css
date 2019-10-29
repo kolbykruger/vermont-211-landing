@@ -1049,7 +1049,7 @@ footer .ewd img {
   width: 100%;
 }
 
-.layout {
+.layout.layout_sidebar, .layout.layout_two_columns, .layout.layout_full {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
@@ -1057,6 +1057,8 @@ footer .ewd img {
 
 .layout.layout_sidebar {
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .layout.layout_sidebar .col_1 {
@@ -1071,6 +1073,11 @@ footer .ewd img {
 
 .layout.layout_sidebar .col_2 section {
   background: #fff;
+}
+
+.layout.layout_two_columns {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .layout.layout_two_columns .col {
@@ -1089,6 +1096,10 @@ footer .ewd img {
 .layout.layout_full .container {
   max-width: 100%;
   padding: 0;
+}
+
+.layout + .layout {
+  margin-top: 3em;
 }
 
 .sidebar .sidebar_section {
