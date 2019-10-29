@@ -1049,36 +1049,42 @@ footer .ewd img {
   width: 100%;
 }
 
-.columns {
+.layout {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
-.columns.columns-half {
-  align-items: stretch;
+.layout.layout_sidebar {
+  justify-content: space-between;
 }
 
-.columns.columns-half > * {
-  flex: 1;
-  min-width: 300px;
-}
-
-.columns.columns-sidebar > *:first-of-type {
-  max-width: 800px;
+.layout.layout_sidebar .col_1 {
   width: 100%;
+  max-width: 800px;
 }
 
-.columns.columns-sidebar > *:last-of-type {
+.layout.layout_sidebar .col_2 {
   width: 300px;
   margin-left: 3em;
 }
 
-.columns.columns-sidebar > * > section:first-of-type {
-  margin-top: 0;
+.layout.layout_two_columns .col {
+  flex: 1;
+  min-width: 300px;
+}
+
+.layout.layout_two_columns .col.col_1 {
+  margin-right: 1.5em;
+}
+
+.layout.layout_two_columns .col.col_2 {
+  margin-left: 1.5em;
+}
+
+.layout.layout_full .container {
+  max-width: 100%;
+  padding: 0;
 }
 
 .sidebar .sidebar_section {
