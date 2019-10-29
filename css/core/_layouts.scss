@@ -5,6 +5,8 @@
 
     &.layout_sidebar {
         justify-content: space-between;
+        max-width: $container-width;
+        margin: 0 auto;
 
         .col_1 {
             width: 100%;
@@ -22,6 +24,8 @@
     }
 
     &.layout_two_columns {
+        max-width: $container-width;
+        margin: 0 auto;
 
         .col {
             flex: 1;
@@ -41,6 +45,10 @@
             max-width: 100%;
             padding: 0
         }
+    }
+
+    & + & {
+        margin-top: 3em;
     }
 
 }
