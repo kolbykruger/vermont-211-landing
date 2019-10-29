@@ -1499,7 +1499,7 @@ input[type="submit"].button {
   overflow: hidden;
 }
 
-.features .item .bar {
+.features .item .info {
   width: 100%;
   padding: 1em 0;
   text-align: center;
