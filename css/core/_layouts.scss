@@ -1,7 +1,12 @@
 .layout {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
+
+    &.layout_sidebar,
+    &.layout_two_columns,
+    &.layout_full {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
 
     &.layout_sidebar {
         justify-content: space-between;
