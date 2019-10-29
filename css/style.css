@@ -1701,49 +1701,49 @@ input[type="submit"].button {
   }
 }
 
-.universal-alt-rows {
+.alt_rows {
   margin: 1em auto;
 }
 
-.universal-alt-rows .container {
+.alt_rows .container {
   padding: 0;
 }
 
-.universal-alt-rows .item {
+.alt_rows .item {
   display: flex;
   align-items: center;
   flex-flow: row wrap;
   margin: 0 auto 3em;
 }
 
-.universal-alt-rows .item:nth-of-type(even) .text {
+.alt_rows .item:nth-of-type(even) .text {
   margin-left: 0;
   margin-right: 2em;
   order: -1;
 }
 
-.universal-alt-rows .item .image {
+.alt_rows .item .image {
   min-width: 275px;
   flex: 2;
 }
 
-.universal-alt-rows .item .image img {
+.alt_rows .item .image img {
   width: 100%;
 }
 
-.universal-alt-rows .item .text {
+.alt_rows .item .text {
   flex: 3;
   margin-left: 2em;
 }
 
 @media (max-width: 900px) {
-  .universal-alt-rows .item {
+  .alt_rows .item {
     display: block;
   }
-  .universal-alt-rows .item .image {
+  .alt_rows .item .image {
     max-width: 100%;
   }
-  .universal-alt-rows .item .text {
+  .alt_rows .item .text {
     margin-left: 0;
     margin-right: 0;
     margin-top: 1em;
@@ -1826,62 +1826,62 @@ table td {
   white-space: nowrap;
 }
 
-.universal-img-grid {
+.gallery {
   margin: 1em auto;
 }
 
-.universal-img-grid .container {
+.gallery .container {
   padding: 0;
 }
 
-.universal-img-grid .group {
+.gallery .group {
   margin: 0 -1em;
   justify-content: center;
 }
 
-.universal-img-grid .item {
+.gallery .item {
   width: calc(25% - 2em);
   margin: 1em;
   text-decoration: none;
   color: inherit;
 }
 
-.universal-img-grid .item .image {
+.gallery .item .image {
   overflow: hidden;
 }
 
-.universal-img-grid .item img {
+.gallery .item img {
   width: 100%;
   transition: 250ms ease;
 }
 
-.universal-img-grid .item:hover img,
-.universal-img-grid .item:focus img {
+.gallery .item:hover img,
+.gallery .item:focus img {
   transform: scale(1.08);
 }
 
-.universal-img-grid .item .caption {
+.gallery .item .caption {
   margin-top: 0.25em;
 }
 
 @media (max-width: 768px) {
-  .universal-img-grid .item {
+  .gallery .item {
     width: calc(33.333% - 2em);
   }
 }
 
 @media (max-width: 600px) {
-  .universal-img-grid .group {
+  .gallery .group {
     margin: 0 -1em;
   }
-  .universal-img-grid .item {
+  .gallery .item {
     width: calc(50% - 1em);
     margin: 0.5em;
   }
 }
 
 @media (max-width: 400px) {
-  .universal-img-grid .item {
+  .gallery .item {
     width: calc(100% - 1em);
     margin: 0.5em;
   }
