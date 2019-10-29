@@ -49,8 +49,8 @@
             @include fluid('font-size', 1.75rem, 3rem);
             font-weight: 600;
         }
-        
-        .subtext {
+
+        .description {
             @include fluid('font-size', 1rem, 1.75rem);
             font-weight: 500;
         }
