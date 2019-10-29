@@ -1311,43 +1311,43 @@ input[type="submit"].button {
   -moz-appearance: none;
 }
 
-.slideshow {
+.carousel {
   margin: 0 auto;
   user-select: none;
 }
 
-.slideshow .container {
+.carousel .container {
   display: none;
   padding: 0;
 }
 
-.slideshow .container.slick-initialized {
+.carousel .container.slick-initialized {
   display: block;
 }
 
-.slideshow .slide {
+.carousel .slide {
   user-select: none;
   width: 100%;
   position: relative;
   outline: none;
 }
 
-.slideshow .slide.slick-current {
+.carousel .slide.slick-current {
   z-index: 100;
 }
 
-.slideshow .slide a {
+.carousel .slide a {
   user-select: none;
   text-decoration: none;
 }
 
-.slideshow .slide img {
+.carousel .slide img {
   user-select: none;
   width: 100%;
   height: auto;
 }
 
-.slideshow .slide .info {
+.carousel .slide .info {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -1358,52 +1358,52 @@ input[type="submit"].button {
   text-align: center;
 }
 
-.slideshow .slide .title {
+.carousel .slide .title {
   margin: 0;
   font-weight: 600;
 }
 
-.slideshow .slide .title {
+.carousel .slide .title {
   font-size: 1.75rem;
 }
 
 @media screen and (min-width: 38rem) {
-  .slideshow .slide .title {
+  .carousel .slide .title {
     font-size: calc(1.75rem + 1.25 * ((100vw - 38rem) / 32));
   }
 }
 
 @media screen and (min-width: 70rem) {
-  .slideshow .slide .title {
+  .carousel .slide .title {
     font-size: 3rem;
   }
 }
 
-.slideshow .slide .description {
+.carousel .slide .description {
   font-weight: 500;
 }
 
-.slideshow .slide .description {
+.carousel .slide .description {
   font-size: 1rem;
 }
 
 @media screen and (min-width: 38rem) {
-  .slideshow .slide .description {
+  .carousel .slide .description {
     font-size: calc(1rem + 0.75 * ((100vw - 38rem) / 32));
   }
 }
 
 @media screen and (min-width: 70rem) {
-  .slideshow .slide .description {
+  .carousel .slide .description {
     font-size: 1.75rem;
   }
 }
 
-.slideshow .slide .button {
+.carousel .slide .button {
   margin: 0.5em 0;
 }
 
-.slideshow > li:only-child {
+.carousel > li:only-child {
   display: none;
 }
 
