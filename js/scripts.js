@@ -16,7 +16,7 @@ $('.slideshow .container').slick({
 });
 
 //Universal Slideshow
-$('.universal-slideshow .container').slick({
+$('.carousel .container').slick({
   autoplay: true,
   autoplaySpeed: 5000,
   dots: true,
