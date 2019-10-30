@@ -1848,10 +1848,6 @@ table td {
   margin: 1em auto;
 }
 
-.gallery .container {
-  padding: 0;
-}
-
 .gallery .group {
   margin: 0 -1em;
   justify-content: center;
