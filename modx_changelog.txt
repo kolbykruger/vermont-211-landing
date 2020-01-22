@@ -4,6 +4,7 @@ Jan 22, 2020 - Rob
 - added js/vendors/flickity.pkgd.min.js to ModxMinify
 - turned off the templates on all "Universal Blocks"
 - added "img" chunk, did not update Content Blocks yet
+- removed placeholder elements from "Sub Page"
 
 Jan 10, 2020 - Rob
 - removed the "sidebar" TV and related chunks/category
