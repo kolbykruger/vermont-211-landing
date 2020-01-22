@@ -1,5 +1,5 @@
 //Responsive iFrame
-$('iframe[src*="youtube"]').wrap('<div class="responsiveIframe"/>');
+$('iframe[src*="youtube"],iframe[src*="vimeo"]').wrap('<div class="responsiveIframe"/>');
 
 //Slideshow
 $('.slideshow .container').slick({
@@ -16,21 +16,30 @@ $('.slideshow .container').slick({
 });
 
 //Universal Slideshow
-$('.carousel .container').slick({
-  autoplay: true,
-  autoplaySpeed: 5000,
-  dots: true,
-  infinite: true,
-  fade: false,
-  speed: 300,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  prevArrow:'<button class="navBtn prev" title="Previous Slide"><i class="fal fa-chevron-left"></i></button>',
-  nextArrow:'<button class="navBtn next" title="Next Slide"><i class="fal fa-chevron-right"></i></button>'
-});
+//$('.carousel .container').slick({
+  //autoplay: true,
+  //autoplaySpeed: 5000,
+  //dots: true,
+  //infinite: true,
+  //fade: false,
+  //speed: 300,
+  //slidesToShow: 1,
+  //slidesToScroll: 1,
+  //prevArrow:'<button class="navBtn prev" title="Previous Slide"><i class="fal fa-chevron-left"></i></button>',
+  //nextArrow:'<button class="navBtn next" title="Next Slide"><i class="fal fa-chevron-right"></i></button>'
+//});
 
 $('.slide').each(function(){
     $(this).removeAttr("aria-describedby");
+});
+
+//Flickity
+$('.carousel .container').flickity({
+  // options
+  imagesLoaded: true,
+  wrapAround: true,
+  autoPlay: 8000,
+  prevNextButtons: false
 });
 
 //Universal Tables
