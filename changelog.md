@@ -3,6 +3,7 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 
 ## 2020-05-02
 - Updated blog chunk to correct PDOPage initialize error [kolby]
+- Removed extra navigation items used for testing mobile-nav overflow [kolby]
 
 ## 2020-22-01
 - moved changelog to GitHub [rob]
