@@ -45,8 +45,7 @@ body {
 p {
     @include fs(16px);
     @include fluid('font-size', 0.875rem, 1rem);
-    @include fluid('line-height', 1.4em, 1.6em);
-    margin: 0 0 0.5em;
+    margin: 0 0 1em;
     font-weight: 400;
     line-height: 1.6;
 }
@@ -86,7 +85,9 @@ h3 {
 
 ol,
 ul {
-    padding: 0 0 22px 30px;
+    @include fs(16px);
+    @include fluid('font-size', 0.875rem, 1rem);
+    padding: 0 0 1.5em 2em;
     line-height: 1.6;
     overflow: hidden;
 }
@@ -153,7 +154,7 @@ article {
 }
 
 section {
-    margin: 3em auto;
+    margin: 0 auto 3em;
 }
 
 .container {
@@ -161,6 +162,10 @@ section {
     max-width: $container-width;
     margin: 0 auto;
     padding: 1em;
+    
+    &{
+        padding: 0;
+    }
 }
 
 .group {
