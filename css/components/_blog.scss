@@ -1,83 +1,98 @@
 .blog {
+    
     margin: 0 auto;
-}
+    
+    .container {
+        
+        & > .group {
+            margin: 0 -2em;
+        }
+    
+    }    
+    
+    .group {
+        justify-content:center;
+    
+    } 
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 
-.blog .container {
+    .post {
+        width: calc(33.333% - 2em);
+        margin: 1em;
+        background: #f8f8f8;
+        transition: $transition-1;
+        
+        &:first-of-type {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+            .summary {
+                display: block;
+            }
+            
+            & > * {
+                width: 50%;
+            }
+            
+            & .cover {
+                order: 1;
+            }
+            
+            .info {
+                padding: 2em;
+                text-align: left;
+            }
+        }
+        
+        &:hover,
+        &:focus{
+            box-shadow:$box-shadow-2;
+        }
+    }
+    
+    .cover {
+        margin: 0 auto;
+        overflow: hidden;
+        
+        img {
+            width: 100%;
+            transition: $transition-1;
+        }
+        
+    }
 
-}
+    .caption {
+        display: none;
+    }
+    
+    .info {
+        padding: 1em;
+        text-align: center;
+    }
 
-.blog .group {
-
-}
-
-.blog .container > .group {
-    margin: 0 -2em;
-}
-
-.blog a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.blog .post {
-    width: calc(33.333% - 2em);
-    margin: 1em;
-    background: #fff;
-    transition: $transition-1;
-}
-
-.blog .cover {
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.blog .cover img {
-    width: 100%;
-    transition: $transition-1;
-}
-
-.blog .caption {
-    display: none;
-}
-
-.blog .info {
-    padding: 1em;
-    text-align: center;
-}
-
-.blog .title {
-
-}
-
-.blog .summary {
-    @include fs(16px);
-    display: none;
-    padding-top: 1em;
-}
-
-/* First Blog */
-.blog-layout .post:first-of-type {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.blog-layout .post:first-of-type > * {
-    width: 50%;
-}
-
-.blog-layout .post:first-of-type .cover {
-    order: 1;
-}
-
-.blog-layout .post:first-of-type .info {
-    padding: 2em;
-    text-align: left;
+    .title {
+    
+    }
+    
+    .summary {
+        @include fs(16px);
+        display: none;
+        padding-top: 1em;
+    }
 }
 
 @media (max-width: 768px) {
-    .blog .container > .group {
-        margin: 0;
+    .blog{
+        
+        .container > .group {
+            margin: 0;
+        }
+        
     }
 }
 
