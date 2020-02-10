@@ -1,6 +1,11 @@
 # Eternity Atom Changelog
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/. 
 
+## 2020-10-02
+- Updated Extras: ContentBlocks, Redactor, Resizer, PdoTools [kolby]
+- Reconfigured Redactor 3 settings (standard) [kolby]
+- Created vapor
+
 ## 2020-05-02
 - Updated blog chunk to correct PDOPage initialize error [kolby]
 - Removed extra navigation items used for testing mobile-nav overflow [kolby]
