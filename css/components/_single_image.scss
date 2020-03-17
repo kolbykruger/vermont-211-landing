@@ -1,0 +1,13 @@
+.single_image{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto 1em;
+    overflow: hidden;
+    border-radius: .25em;
+    
+    img{
+        width:100%;
+        display: block;
+    }
+    
+}
