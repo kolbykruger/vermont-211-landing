@@ -1,10 +1,16 @@
 .carousel {
-    margin: 0 auto;
     user-select: none;
-
 
     .container {
         padding: 0;
+    }
+
+    .group {
+
+    }
+
+    .flickity-viewport {
+        width: 100%;
     }
 
     .slide {
@@ -12,10 +18,6 @@
         width: 100%;
         position: relative;
         outline: none;
-
-        &.slick-current {
-            z-index: 100;
-        }
 
         a {
             user-select: none;
@@ -54,11 +56,6 @@
             margin: 0.5em 0;
         }
     }
-
-    > li:only-child {
-        display:none;
-    }
-
     @media (max-width: 900px) {
 
     }
