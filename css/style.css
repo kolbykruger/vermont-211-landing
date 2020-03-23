@@ -1873,6 +1873,7 @@ table td {
   left: 1px;
   right: 1px;
   z-index: 99;
+  overflow: hidden;
 }
 .autocomplete-items a {
   display: block;
@@ -1882,8 +1883,8 @@ table td {
   color: inherit;
   transition: 250ms ease;
 }
-.autocomplete-items a:hover, .autocomplete-items a:focus {
-  background: #f8f8f8;
+.autocomplete-items a:hover, .autocomplete-items a:focus, .autocomplete-items a.autocomplete-active {
+  background: #f1f2f3;
 }
 
 .accordion .accordion-title {
