@@ -1,6 +1,29 @@
 //Responsive iFrame
 $('iframe[src*="youtube"],iframe[src*="vimeo"]').wrap('<div class="responsive-iframe"/>');
 
+//Accordion
+document.addEventListener('DOMContentLoaded', function() {
+    let accordion = document.querySelectorAll('.accordion-title');
+
+    for (let i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener('click', function() {
+            let panel = this.nextElementSibling;
+
+            if (panel.style.maxHeight){
+                this.classList.remove('open');
+                panel.style.maxHeight = null;
+                panel.setAttribute('aria-hidden', true);
+                panel.setAttribute('aria-expanded', false);
+            } else {
+                this.classList.add('open');
+                panel.style.maxHeight = panel.scrollHeight + 'px';
+                panel.setAttribute('aria-hidden', false);
+                panel.setAttribute('aria-expanded', true);
+            }
+        });
+    }
+});
+
 //Flickity Carousel
 $('.carousel .group').flickity({
     cellSelector: '.slide',
