@@ -14,6 +14,7 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 - Fixed `main` wrapper for subpage template [@kolby](https://github.com/kolbykruger)
 - Fixed social head from including HTML tags - removed inclusion of content field and replaced with introtext. Now that we're using content-blocks, inclusion of the content field becomes very challenging... [@kolby](https://github.com/kolbykruger)
 - Fixed content-block setting for utility pages (sitemap, rss feed, search results, robots and autocomplete) as they were being wrapped in HTML [@kolby](https://github.com/kolbykruger)
+- Fixed blog post layout - class updates [@kolby](https://github.com/kolbykruger)
 - Removed variable line-heights for headings, returned to default `1.2` value [@kolby](https://github.com/kolbykruger)
 - Removed slick styling, slick files, and slick scripts [@kolby](https://github.com/kolbykruger)
 
