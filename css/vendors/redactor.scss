@@ -1,0 +1,12 @@
+//Customization for Redactor 3 Editor
+@import '../variables/functions';
+@import '../variables/variables';
+
+.redactor-styles {
+    @import '../core/general';
+    @import '../components/buttons';
+
+    * {
+        font-family: $font-0 !important;
+    }
+}
