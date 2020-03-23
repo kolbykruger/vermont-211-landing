@@ -38,9 +38,9 @@ html.wf-inactive {
 body {
     color: $color-0;
     background: $color-grey-1;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-0;
     @include fs(16px);
-    max-width:100vw;
+    max-width: 100vw;
     overflow-x: hidden;
 }
 
@@ -62,19 +62,22 @@ a {
 
 h1 {
     @include fluid('font-size', 2.5rem, 3.5rem);
-    @include fluid('line-height', 1em, 1.2em);
+    //@include fluid('line-height', 1em, 1.2em);
+    line-height: 1.2;
     font-weight: 600;
 }
 
 h2 {
     @include fluid('font-size', 1.75rem, 2.5rem);
-    @include fluid('line-height', 1em, 1.2em);
+    //@include fluid('line-height', 1em, 1.2em);
+    line-height: 1.2;
     font-weight: 600;
 }
 
 h3 {
     @include fluid('font-size', 1.25rem, 1.75rem);
-    @include fluid('line-height', 1em, 1.2em);
+    //@include fluid('line-height', 1em, 1.2em);
+    line-height: 1.2;
     font-weight: 600;
 }
 
@@ -147,6 +150,10 @@ img {
     border: none;
 }
 
+figure {
+
+}
+
 main {
     min-height: 72vh;
 }
@@ -164,7 +171,7 @@ section {
     max-width: $container-width;
     margin: 0 auto;
     padding: 1em;
-    
+
     & &{
         padding: 0;
     }
