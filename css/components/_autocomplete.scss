@@ -5,6 +5,7 @@
     left: 1px;
     right: 1px;
     z-index: 99;
+    overflow: hidden;
 
     a {
         display: block;
@@ -15,8 +16,9 @@
         transition: $transition-1;
 
         &:hover,
-        &:focus {
-            background: $color-grey-2;
+        &:focus,
+        &.autocomplete-active {
+            background: $color-grey-1;
         }
     }
 }
