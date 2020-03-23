@@ -1,5 +1,5 @@
 //Responsive iFrame
-$('iframe[src*="youtube"],iframe[src*="vimeo"]').wrap('<div class="responsiveIframe"/>');
+$('iframe[src*="youtube"],iframe[src*="vimeo"]').wrap('<div class="responsive-iframe"/>');
 
 //Slideshow
 $('.slideshow .container').slick({
