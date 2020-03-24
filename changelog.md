@@ -18,6 +18,9 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 - Removed variable line-heights for headings, returned to default `1.2` value [@kolby](https://github.com/kolbykruger)
 - Removed slick styling, slick files, and slick scripts [@kolby](https://github.com/kolbykruger)
 
+## 2020-21-03
+- Added/Updated Content Block Icons to include @2x versions to fix load issue [@rob](https://github.com/robliberty)
+
 ## 2020-10-02
 - Updated Extras: ContentBlocks, Redactor, Resizer, PdoTools [@kolby](https://github.com/kolbykruger)
 - Reconfigured Redactor 3 settings (standard) [@kolby](https://github.com/kolbykruger)
