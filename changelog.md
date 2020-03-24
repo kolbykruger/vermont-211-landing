@@ -2,6 +2,9 @@
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
 ## 2020-23-03
+- Added Content Block Icon for Accordian [@rob](https://github.com/robliberty)
+
+## 2020-23-03
 - Added `.group` to carousel to work with flickity properly (broken before) [@kolby](https://github.com/kolbykruger)
 - Added autocomplete to search [@kolby](https://github.com/kolbykruger)
 - Added redactor styling [@kolby](https://github.com/kolbykruger)
