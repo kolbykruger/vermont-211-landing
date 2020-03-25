@@ -2,11 +2,13 @@
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
 ## 2020-25-03
+- Updated default modal layout for Content Blocks - now shows the description field for blocks which provides useful contextual information for the client when making a choice [@kolby](https://github.com/kolbykruger)
+- Updated content-block display system setting to `expanded` so that descriptions show for clients [@kolby](https://github.com/kolbykruger)
 - Added new components for: search-results [@kolby](https://github.com/kolbykruger)
 - Added `figure` styling (Redactor wraps `img` in a figure) [@kolby](https://github.com/kolbykruger)
+- Added descriptions for all content-block fields, layouts and templates [@kolby](https://github.com/kolbykruger)
 - Fixed the following component files that didn't have nested scss: posts, search, table [@kolby](https://github.com/kolbykruger)
 - Fixed the following core fiels that didn't have nested scss: mobile_nav, nav, pageheading [@kolby](https://github.com/kolbykruger)
-- Updated default modal layout for Content Blocks - now shows the description field for blocks which provides useful contextual information for the client when making a choice [@kolby](https://github.com/kolbykruger)
 
 ## 2020-23-03
 - Added Content Block Icon for Accordian [@rob](https://github.com/robliberty)
