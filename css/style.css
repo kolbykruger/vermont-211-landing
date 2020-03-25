@@ -710,6 +710,14 @@ img {
   border: none;
 }
 
+@media (max-width: 768px) {
+  figure[style*=float] {
+    float: none !important;
+    width: 100% !important;
+    margin: 0.5em auto !important;
+  }
+}
+
 main {
   min-height: 72vh;
 }
