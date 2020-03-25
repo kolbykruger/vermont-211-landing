@@ -6,9 +6,10 @@
 	    color: inherit;
 	    transition: $transition-1;
 
-	    @include hocus {
-	        opacity: 1;
-	    }
+	    &:hover,
+		&:focus {
+			opacity: 1;
+		}
 
 		&:only-child {
 		    margin: 0;
