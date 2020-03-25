@@ -44,46 +44,6 @@
     appearance: none;
 }
 
-// .search .autocomplete-items {
-//     @include fs(12px);
-//     position: absolute;
-//     border: 1px solid $color-grey-2;
-//     z-index: 99;
-//     top: 100%;
-//     left: 0;
-//     width: 100%;
-// }
-//
-// .search .autocomplete-items .heading {
-//     padding: 6px 10px;
-//     line-height: 110%;
-//     background: $color-grey-2;
-//     color: rgba(0,0,0,.8);
-//     text-transform: uppercase;
-//     border-bottom: 1px solid $color-grey-2;
-//     font-weight: 500;
-// }
-//
-// .search .autocomplete-items a {
-//     padding: 6px 10px;
-//     line-height: 110%;
-//     cursor: pointer;
-//     background: #fff;
-//     color: $color-0;
-//     border-bottom: 1px solid $color-grey-2;
-//     display: block;
-//     text-decoration: none;
-// }
-//
-// .search .autocomplete-items a:hover {
-//     background: $color-grey-2;
-// }
-//
-// .search .autocomplete-items a.autocomplete-active {
-//     background: $color-1;
-//     color: #ffffff;
-// }
-
 /* Search Results */
 p.simplesearch-results,
 .simplesearch-paging {
