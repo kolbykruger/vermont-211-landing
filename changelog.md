@@ -1,6 +1,11 @@
 # Eternity Atom Changelog
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
+## 2020-25-03
+- Added new components for: search-results
+- Fixed the following component files that didn't have nested scss: posts, search, table
+- Fixed the following core fiels that didn't have nested scss: mobile_nav, nav, pageheading
+
 ## 2020-23-03
 - Added Content Block Icon for Accordian [@rob](https://github.com/robliberty)
 
