@@ -2,6 +2,7 @@
     position: absolute;
     top: calc(100% + 1px);
     background: #fff;
+    box-shadow: $box-shadow-1;
     left: 1px;
     right: 1px;
     z-index: 99;
@@ -21,4 +22,14 @@
             background: $color-grey-1;
         }
     }
+
+    // .heading {
+    //     padding: 6px 10px;
+    //     line-height: 110%;
+    //     background: $color-grey-2;
+    //     color: rgba(0,0,0,.8);
+    //     text-transform: uppercase;
+    //     border-bottom: 1px solid $color-grey-2;
+    //     font-weight: 500;
+    // }
 }
