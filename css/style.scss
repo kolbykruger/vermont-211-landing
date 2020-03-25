@@ -17,30 +17,39 @@
 @import 'core/layouts';
 
 //Components
-@import 'components/sidebar';
-@import 'components/section_heading';
-@import 'components/search';
-@import 'components/search-results';
-@import 'components/contact';
-@import 'components/social-icons';
-@import 'components/buttons';
-@import 'components/carousel';
-@import 'components/features';
-@import 'components/blog';
-@import 'components/blog_bar';
-@import 'components/posts';
-@import 'components/post-meta';
-@import 'components/tags';
-@import 'components/instagram';
-@import 'components/introduction';
-@import 'components/alternating_rows';
-@import 'components/responsive-iframe';
-@import 'components/slideshow';
-@import 'components/table';
-@import 'components/gallery';
-@import 'components/single_image';
-@import 'components/autocomplete';
-@import 'components/accordion';
+    //Generic
+    @import 'components/sidebar';
+    @import 'components/section_heading';
+    @import 'components/buttons';
+    @import 'components/social-icons';
+    @import 'components/instagram';
+    @import 'components/contact';
+
+    //Utility
+    @import 'components/responsive-iframe';
+
+    //Search
+    @import 'components/autocomplete';
+    @import 'components/search';
+    @import 'components/search-results';
+
+    //Blogs
+    @import 'components/blog';
+    @import 'components/blog_bar';
+    @import 'components/posts';
+    @import 'components/post-meta';
+    @import 'components/tags';
+
+    //Content Blocks
+    @import 'components/alternating_rows';
+    @import 'components/accordion';
+    @import 'components/carousel';
+    @import 'components/features';
+    @import 'components/gallery';
+    @import 'components/introduction';
+    @import 'components/single_image';
+    @import 'components/slideshow';
+    @import 'components/table';
 
 //Unused
 //@import 'components/slick-arrows';
