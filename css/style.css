@@ -1543,8 +1543,8 @@ p.simplesearch-results,
   margin: 0;
 }
 .blog .summary {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 16px;
+  font-size: 1rem;
   padding-top: 1em;
 }
 @media (max-width: 768px) {
