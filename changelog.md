@@ -10,6 +10,7 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 - Added two-column and sidebar views to test page [@kolby](https://github.com/kolbykruger)
 - Added styling to remove `Properties` field from chunk selector in content blocks [@kolby](https://github.com/kolbykruger)
 - Added mobile styling for sidebar element [@kolby](https://github.com/kolbykruger)
+- Added mobile styling for blog-bar (hidden on mobile) [@kolby](https://github.com/kolbykruger)
 - Removed image hover on features [@kolby](https://github.com/kolbykruger)
 - Removed content blocks `container` and `group` for sidebar + two-column layouts [@kolby](https://github.com/kolbykruger)
 - Fixed bottom margin for blog-bar [@kolby](https://github.com/kolbykruger)
@@ -18,6 +19,7 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 - Fixed event tracking for multiple areas (blogs, features, navicon, footer, etc) [@kolby](https://github.com/kolbykruger)
 - Fixed content blocks wrapping for search results [@kolby](https://github.com/kolbykruger)
 - Fixed `width="100%"` issue in RSS feed - hard-set at `800` for now until we find a better solution [@kolby](https://github.com/kolbykruger)
+- Fixed blog styling for mobile responsiveness (refactored a lot of HTML) [@kolby](https://github.com/kolbykruger)
 
 ## 2020-30-03
 - Added notification component [@kolby](https://github.com/kolbykruger)
