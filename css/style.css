@@ -844,7 +844,6 @@ hr::before {
   .header .logo {
     max-width: 160px;
     max-height: 70px;
-    padding: 0 0 0 1em;
   }
   .header .search {
     display: none;
@@ -1433,6 +1432,21 @@ input[type=submit].button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.mobile-search {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 1em;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(50, 50, 93, 0.1);
+}
+.mobile-search.open {
+  display: block;
 }
 
 /* Search Results */
