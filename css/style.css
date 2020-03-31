@@ -1087,6 +1087,11 @@ body.menu-open .mobile_nav {
   z-index: 999;
   opacity: 1;
 }
+.ada-accessibility .button + .button {
+  margin-left: 0;
+  margin-top: 0.25em;
+}
+
 .pageheading {
   margin: 0;
 }
