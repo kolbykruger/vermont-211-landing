@@ -1503,7 +1503,7 @@ p.simplesearch-results,
   text-align: left;
 }
 .blog .container > .group {
-  margin: 0 -2em;
+  margin: 0 -1em;
 }
 .blog .group {
   justify-content: center;
@@ -1563,15 +1563,16 @@ p.simplesearch-results,
 }
 
 .blog-bar {
-  margin: 0 auto 1em;
+  margin: 0 auto;
 }
 .blog-bar .container {
-  background: #fff;
-  padding: 1em;
+  padding: 0 1em;
 }
 .blog-bar .group {
   align-items: center;
   justify-content: space-between;
+  padding: 1em;
+  background: #fff;
 }
 .blog-bar a {
   padding: 0.5em;
