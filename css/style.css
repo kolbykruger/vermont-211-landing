@@ -1628,6 +1628,14 @@ p.simplesearch-results,
 .tags .tag:only-child {
   margin: 0;
 }
+.tags .tag.post-tag {
+  background: rgba(239, 69, 56, 0.15);
+  color: #ef4538;
+  padding: 0.5em;
+  opacity: 1;
+  border-radius: 0.25em;
+  line-height: 1;
+}
 
 .alt_rows .group {
   display: flex;
