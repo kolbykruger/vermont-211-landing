@@ -55,7 +55,17 @@
     z-index: 99;
     box-shadow: $box-shadow-1;
 
-    &.open {
-        display: block;
+    @media (max-width: 900px) {
+
+        &.open {
+            display: block;
+        }
+
+        header &.open {
+
+            .search {
+                display: block;
+            }
+        }
     }
 }
