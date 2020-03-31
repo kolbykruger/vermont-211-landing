@@ -1554,6 +1554,9 @@ p.simplesearch-results,
   }
 }
 
+.blog-bar {
+  margin: 0 auto 1em;
+}
 .blog-bar .container {
   background: #fff;
   padding: 1em;
@@ -1634,7 +1637,6 @@ p.simplesearch-results,
   padding: 0.5em;
   opacity: 1;
   border-radius: 0.25em;
-  line-height: 1;
 }
 
 .alt_rows .group {
