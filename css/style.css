@@ -1083,7 +1083,7 @@ body.menu-open .mobile_nav {
   z-index: -1;
   opacity: 0;
 }
-.ada-accessibility:focus, .ada-accessibility:focus-within {
+.ada-accessibility:focus, .ada-accessibility:focus-within, .ada-accessibility.ada-accessibility-expanded {
   z-index: 999;
   opacity: 1;
 }
