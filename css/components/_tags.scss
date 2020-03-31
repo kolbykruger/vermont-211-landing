@@ -1,4 +1,5 @@
-.tags{
+.tags {
+
 	.tag {
 	    font-size: 0.875rem;
 	    opacity: 0.75;
@@ -13,6 +14,15 @@
 
 		&:only-child {
 		    margin: 0;
+		}
+
+		&.post-tag {
+			background: rgba($color-1, 0.15);
+			color: $color-1;
+			padding: 0.5em;
+			opacity: 1;
+			border-radius: 0.25em;
+			line-height: 1;
 		}
 	}
 }
