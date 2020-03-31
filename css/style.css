@@ -1445,6 +1445,14 @@ input[type=submit].button {
   z-index: 99;
   box-shadow: 0 2px 4px 0 rgba(50, 50, 93, 0.1);
 }
+.mobile-search .search {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  top: auto;
+  left: auto;
+  right: auto;
+}
 @media (max-width: 900px) {
   .mobile-search.open {
     display: block;
