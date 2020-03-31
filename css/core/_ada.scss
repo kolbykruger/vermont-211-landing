@@ -1,0 +1,29 @@
+.ada-accessibility {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+
+    &:focus,
+    &:focus-within {
+        z-index: 999;
+        opacity: 1;
+    }
+
+    .container {
+
+    }
+
+    .group {
+
+    }
+
+    .buttons {
+
+        .button {
+
+        }
+    }
+}
