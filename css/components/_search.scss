@@ -55,6 +55,15 @@
     z-index: 99;
     box-shadow: $box-shadow-1;
 
+    .search {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+
     @media (max-width: 900px) {
 
         &.open {
