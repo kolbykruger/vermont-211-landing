@@ -907,7 +907,7 @@ hr::before {
   position: relative;
   display: block;
 }
-.nav li.open a {
+.nav li.open > a {
   color: #ef4538;
 }
 .nav li.open ul {
