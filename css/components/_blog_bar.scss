@@ -1,14 +1,15 @@
 .blog-bar {
-    margin: 0 auto 1em;
+    margin: 0 auto;
 
     .container {
-        background: #fff;
-        padding: 1em;
+        padding: 0 1em;
     }
 
     .group {
         align-items: center;
         justify-content: space-between;
+        padding: 1em;
+        background: #fff;
     }
 
     a {
