@@ -16,6 +16,7 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 - Added mobile styling and javascript for mobile-search + mobile-search-trigger (preliminary) [@kolby](https://github.com/kolbykruger)
 - Added ADA accessibilty markup, styling + scripts [@kolby](https://github.com/kolbykruger)
 - Added autocomplete scripts to github for maintainability [@kolby](https://github.com/kolbykruger)
+- Added Fancybox for gallery component [@rob](https://github.com/robliberty)
 - Removed image hover on features [@kolby](https://github.com/kolbykruger)
 - Removed content blocks `container` and `group` for sidebar + two-column layouts [@kolby](https://github.com/kolbykruger)
 - Fixed bottom margin for blog-bar [@kolby](https://github.com/kolbykruger)
@@ -25,6 +26,8 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 - Fixed content blocks wrapping for search results [@kolby](https://github.com/kolbykruger)
 - Fixed `width="100%"` issue in RSS feed - hard-set at `800` for now until we find a better solution [@kolby](https://github.com/kolbykruger)
 - Fixed blog styling for mobile responsiveness (refactored a lot of HTML) [@kolby](https://github.com/kolbykruger)
+- Fixed cropping for gallery component [@rob](https://github.com/robliberty)
+- Fixed styling for gallery component [@kolby](https://github.com/kolbykruger)
 - Created Vapor `1.0.1` [@kolby](https://github.com/kolbykruger)
 
 ## 2020-30-03
