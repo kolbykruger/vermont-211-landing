@@ -1075,6 +1075,18 @@ body.menu-open .mobile_nav {
   z-index: 9999;
 }
 
+.ada-accessibility {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+}
+.ada-accessibility:focus, .ada-accessibility:focus-within {
+  z-index: 999;
+  opacity: 1;
+}
 .pageheading {
   margin: 0;
 }
