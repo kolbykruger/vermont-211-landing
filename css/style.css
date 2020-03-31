@@ -1445,8 +1445,13 @@ input[type=submit].button {
   z-index: 99;
   box-shadow: 0 2px 4px 0 rgba(50, 50, 93, 0.1);
 }
-.mobile-search.open {
-  display: block;
+@media (max-width: 900px) {
+  .mobile-search.open {
+    display: block;
+  }
+  header .mobile-search.open .search {
+    display: block;
+  }
 }
 
 /* Search Results */
