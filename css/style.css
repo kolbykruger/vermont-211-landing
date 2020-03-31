@@ -550,16 +550,16 @@ p {
   line-height: 1.6;
 }
 p {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 @media screen and (min-width: 38rem) {
   p {
-    font-size: calc(0.875rem + 0.125 * ((100vw - 38rem) / 32));
+    font-size: calc(1rem + 0.125 * ((100vw - 38rem) / 32));
   }
 }
 @media screen and (min-width: 70rem) {
   p {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -642,18 +642,18 @@ ul {
 }
 ol,
 ul {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 @media screen and (min-width: 38rem) {
   ol,
 ul {
-    font-size: calc(0.875rem + 0.125 * ((100vw - 38rem) / 32));
+    font-size: calc(1rem + 0.125 * ((100vw - 38rem) / 32));
   }
 }
 @media screen and (min-width: 70rem) {
   ol,
 ul {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 
