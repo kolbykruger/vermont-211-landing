@@ -8,6 +8,7 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 - Added mobile responsive for search results [@kolby](https://github.com/kolbykruger)
 - Added two-column and sidebar views to test page [@kolby](https://github.com/kolbykruger)
 - Added styling to remove `Properties` field from chunk selector in content blocks [@kolby](https://github.com/kolbykruger)
+- Added mobile styling for sidebar element
 - Removed image hover on features [@kolby](https://github.com/kolbykruger)
 - Removed content blocks `container` and `group` for sidebar + two-column layouts [@kolby](https://github.com/kolbykruger)
 - Fixed bottom margin for blog-bar [@kolby](https://github.com/kolbykruger)
