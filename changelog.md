@@ -1,6 +1,22 @@
 # Eternity Atom Changelog
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
+## 2020-31-03
+- Updated mobile-responsive for two-column and sidebar layouts [@kolby](https://github.com/kolbykruger)
+- Updated form names for user friendly views [@kolby](https://github.com/kolbykruger)
+- Added unique tag styling for blog post meta [@kolby](https://github.com/kolbykruger)
+- Added mobile responsive for search results [@kolby](https://github.com/kolbykruger)
+- Added two-column and sidebar views to test page [@kolby](https://github.com/kolbykruger)
+- Added styling to remove `Properties` field from chunk selector in content blocks [@kolby](https://github.com/kolbykruger)
+- Removed image hover on features [@kolby](https://github.com/kolbykruger)
+- Removed content blocks `container` and `group` for sidebar + two-column layouts [@kolby](https://github.com/kolbykruger)
+- Fixed bottom margin for blog-bar [@kolby](https://github.com/kolbykruger)
+- Fixed search results images [@kolby](https://github.com/kolbykruger)
+- Fixed navigation nesting rule for open trigger coloring via links [@kolby](https://github.com/kolbykruger)
+- Fixed event tracking for multiple areas (blogs, features, navicon, footer, etc) [@kolby](https://github.com/kolbykruger)
+- Fixed content blocks wrapping for search results [@kolby](https://github.com/kolbykruger)
+- Fixed `width="100%"` issue in RSS feed - hard-set at `800` for now until we find a better solution [@kolby](https://github.com/kolbykruger)
+
 ## 2020-30-03
 - Added notification component [@kolby](https://github.com/kolbykruger)
 
