@@ -1597,6 +1597,11 @@ p.simplesearch-results,
   cursor: pointer;
   transition: 250ms ease;
 }
+@media (max-width: 768px) {
+  .blog-bar {
+    display: none;
+  }
+}
 
 .pageheading + .post-meta + section {
   margin: 0;
