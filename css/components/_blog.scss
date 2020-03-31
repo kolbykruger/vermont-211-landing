@@ -52,14 +52,14 @@
     .post {
         width: calc(33.333% - 2em);
         margin: 1em;
-        border-radius:.25em;
+        border-radius: 0.25em;
         overflow: hidden;
-        background: #f8f8f8;
+        background: #fff;
         transition: $transition-1;
 
         &:hover,
         &:focus{
-            box-shadow:$box-shadow-2;
+            box-shadow: $box-shadow-2;
         }
     }
 
