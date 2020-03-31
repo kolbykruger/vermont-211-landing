@@ -10,20 +10,21 @@
         width: calc(25% - 2em);
         margin: 1em;
         text-decoration: none;
+        overflow: hidden;
         color: inherit;
-
-        .image {
-            overflow: hidden;
-        }
 
         img {
             width: 100%;
             transition: $transition-1;
         }
 
-        &:hover img,
-        &:focus img {
-            transform: scale(1.08);
+        &:hover,
+        &:focus {
+
+            img {
+                opacity: 0.85;
+                transform: scale(1.08);
+            }
         }
 
         .caption {
