@@ -7,7 +7,8 @@
     opacity: 0;
 
     &:focus,
-    &:focus-within {
+    &:focus-within,
+    &.ada-accessibility-expanded {
         z-index: 999;
         opacity: 1;
     }
