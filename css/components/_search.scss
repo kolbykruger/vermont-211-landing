@@ -43,3 +43,19 @@
         appearance: none;
     }
 }
+
+.mobile-search {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 1em;
+    z-index: 99;
+    box-shadow: $box-shadow-1;
+
+    &.open {
+        display: block;
+    }
+}
