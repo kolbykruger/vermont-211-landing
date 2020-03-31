@@ -1509,7 +1509,7 @@ p.simplesearch-results,
   margin: 1em;
   border-radius: 0.25em;
   overflow: hidden;
-  background: #f8f8f8;
+  background: #fff;
   transition: 250ms ease;
 }
 .blog .post:hover, .blog .post:focus {
@@ -1830,15 +1830,17 @@ p.simplesearch-results,
   position: relative;
   margin: 1em;
   width: calc(33.333% - 2em);
+  background: #fff;
+  border-radius: 0.25em;
+  transition: 250ms ease;
   overflow: hidden;
 }
 .features .item .info {
   width: 100%;
-  padding: 1em 0;
-  text-align: center;
+  padding: 1em;
 }
-.features .item:hover .image {
-  opacity: 0.9;
+.features .item:hover, .features .item:focus {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .features img {
   width: 100%;
