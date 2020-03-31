@@ -2,6 +2,8 @@
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
 ## 2020-31-03
+- Updated MODX version to `2.7.3` [@kolby](https://github.com/kolbykruger)
+- Updated Extras (Redactor) [@kolby](https://github.com/kolbykruger)
 - Updated mobile-responsive for two-column and sidebar layouts [@kolby](https://github.com/kolbykruger)
 - Updated form names for user friendly views [@kolby](https://github.com/kolbykruger)
 - Updated font-size for paragraphs and lists from `14` to `16` for mobile [@kolby](https://github.com/kolbykruger)
@@ -23,6 +25,7 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 - Fixed content blocks wrapping for search results [@kolby](https://github.com/kolbykruger)
 - Fixed `width="100%"` issue in RSS feed - hard-set at `800` for now until we find a better solution [@kolby](https://github.com/kolbykruger)
 - Fixed blog styling for mobile responsiveness (refactored a lot of HTML) [@kolby](https://github.com/kolbykruger)
+- Created Vapor `1.0.1`
 
 ## 2020-30-03
 - Added notification component [@kolby](https://github.com/kolbykruger)
