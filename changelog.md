@@ -25,7 +25,7 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 - Fixed content blocks wrapping for search results [@kolby](https://github.com/kolbykruger)
 - Fixed `width="100%"` issue in RSS feed - hard-set at `800` for now until we find a better solution [@kolby](https://github.com/kolbykruger)
 - Fixed blog styling for mobile responsiveness (refactored a lot of HTML) [@kolby](https://github.com/kolbykruger)
-- Created Vapor `1.0.1`
+- Created Vapor `1.0.1` [@kolby](https://github.com/kolbykruger)
 
 ## 2020-30-03
 - Added notification component [@kolby](https://github.com/kolbykruger)
