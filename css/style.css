@@ -1548,9 +1548,6 @@ p.simplesearch-results,
   padding-top: 1em;
 }
 @media (max-width: 768px) {
-  .blog .container > .group {
-    margin: 0;
-  }
   .blog .post {
     width: calc(100% - 2em) !important;
   }
