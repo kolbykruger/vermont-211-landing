@@ -4,6 +4,7 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 ## 2020-01-04
 - Added new chunk `schema_business` to autogenerate the localBusiness json data in the head [@kolby](https://github.com/kolbykruger)
 - Updated the `googleanalytics` chunk into two separate chunks now being used for Google Tag Manager. The new chunks are `google_tag_manager_head` and `google_tag_manager_body` [@kolby](https://github.com/kolbykruger)
+- Created Vapor `1.0.1` [@kolby](https://github.com/kolbykruger)
 
 ## 2020-31-03
 - Updated MODX version to `2.7.3` [@kolby](https://github.com/kolbykruger)
@@ -32,7 +33,6 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 - Fixed blog styling for mobile responsiveness (refactored a lot of HTML) [@kolby](https://github.com/kolbykruger)
 - Fixed cropping for gallery component [@rob](https://github.com/robliberty)
 - Fixed styling for gallery component [@kolby](https://github.com/kolbykruger)
-- Created Vapor `1.0.1` [@kolby](https://github.com/kolbykruger)
 
 ## 2020-30-03
 - Added notification component [@kolby](https://github.com/kolbykruger)
