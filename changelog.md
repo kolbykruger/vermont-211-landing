@@ -1,6 +1,10 @@
 # Eternity Atom Changelog
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
+## 2020-01-04
+- Added new chunk `schema_business` to autogenerate the localBusiness json data in the head [@kolby](https://github.com/kolbykruger)
+- Updated the `googleanalytics` chunk into two separate chunks now being used for Google Tag Manager. The new chunks are `google_tag_manager_head` and `google_tag_manager_body` [@kolby](https://github.com/kolbykruger)
+
 ## 2020-31-03
 - Updated MODX version to `2.7.3` [@kolby](https://github.com/kolbykruger)
 - Updated Extras (Redactor) [@kolby](https://github.com/kolbykruger)
