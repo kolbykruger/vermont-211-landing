@@ -1,6 +1,11 @@
 # Eternity Atom Changelog
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
+## 2020-08-04
+- Updated Search trigger and search form to be hidden (commented out) for mobile view for now. Only turned on when needed or required [@kolby](https://github.com/kolbykruger)
+- Fixed a bug where the simpleSearchForm snippet would not return results (removed the `searchIndex` property from the snippet call) [@kolby](https://github.com/kolbykruger)
+- Fixed a bug where the simpleSearchForm template was returning duplicate IDs if the search appeared multiple times on one page [@kolby](https://github.com/kolbykruger)
+
 ## 2020-01-04
 - Added new chunk `schema_business` to autogenerate the localBusiness json data in the head [@kolby](https://github.com/kolbykruger)
 - Updated the `googleanalytics` chunk into two separate chunks now being used for Google Tag Manager. The new chunks are `google_tag_manager_head` and `google_tag_manager_body` [@kolby](https://github.com/kolbykruger)
