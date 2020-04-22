@@ -11,8 +11,21 @@ function searchAutocomplete() {
         dataType: 'json',
         success: function(data) {
             
+            function htmlDecode(input) {
+                var doc = new DOMParser().parseFromString(input, "text/html");
+                return doc.documentElement.textContent;
+            }
+            
             $.each(data.pages, function(i, val) {
-                pages.push(val)
+                
+                let pageObj = {
+                    name: htmlDecode(val.name),
+                    url: val.url,
+                    uri: val.uri,
+                    id: val.id
+                }
+                
+                pages.push(pageObj)
             });
             
         },
