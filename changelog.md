@@ -1,6 +1,9 @@
 # Eternity Atom Changelog
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
+## 2020-22-04
+- Escaped html characters in autocomplete.json (autocomplete.tpl chunk) using :htmlent [@rob](https://github.com/robliberty)
+
 ## 2020-08-04
 - Updated Search trigger and search form to be hidden (commented out) for mobile view for now. Only turned on when needed or required [@kolby](https://github.com/kolbykruger)
 - Fixed a bug where the simpleSearchForm snippet would not return results (removed the `searchIndex` property from the snippet call) [@kolby](https://github.com/kolbykruger)
