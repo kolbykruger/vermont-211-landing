@@ -5,6 +5,7 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 - Added javascript for blog categories dropdown to trigger an href filter [@kolby](https://github.com/kolbykruger)
 - Added select component for global select box styling via the `.select` class [@kolby](https://github.com/kolbykruger)
 - Updated search component to include inherited `font-family` from the body [@kolby](https://github.com/kolbykruger)
+- Updated the `blog_categories` with the new select class for corrected styling of the select [@kolby](https://github.com/kolbykruger)
 
 ## 1.1.2 - 2020-22-04
 - Escaped html characters in autocomplete.json (autocomplete.tpl chunk) using :htmlent [@rob](https://github.com/robliberty)
