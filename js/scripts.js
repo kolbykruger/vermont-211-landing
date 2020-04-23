@@ -1,3 +1,15 @@
+//Blog Categories (if a selectbox)
+let blogCategories = {
+    elem: document.querySelector('select#blog_categories'),
+    init: function() {
+        if (this.elem) {
+            this.elem.addEventListener('change', function(e) {
+                window.location.href = window.location.href.split('?')[0] + '?category=' + e.target.value
+            });
+        }
+    }
+}.init();
+
 //Responsive iFrame
 $('iframe[src*="youtube"],iframe[src*="vimeo"]').wrap('<div class="responsive-iframe"/>');
 
