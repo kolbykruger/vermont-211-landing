@@ -1,6 +1,9 @@
 # Eternity Atom Changelog
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
+## 1.1.3 - 2020-23-04
+- Added javascript for blog categories dropdown to trigger an href filter [@kolby](https://github.com/kolbykruger)
+
 ## 1.1.2 - 2020-22-04
 - Escaped html characters in autocomplete.json (autocomplete.tpl chunk) using :htmlent [@rob](https://github.com/robliberty)
 - Updated autocomplete.js to decode special HTML characters found within the name field of the autocomplete.json file [@kolby](https://github.com/kolbykruger)
