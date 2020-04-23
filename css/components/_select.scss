@@ -1,0 +1,36 @@
+.select {
+    position: relative;
+    display: inline-block;
+
+    select {
+        @include fs(14px);
+        appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        padding: 0.75em;
+        padding-right: 4em;
+        font-family: inherit;
+        line-height: inherit;
+        border-radius: 0.25em;
+        border: 1px solid #ddd;
+        color: $color-0;
+        cursor: pointer;
+    }
+
+    &::after {
+        content: '\f0d7';
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 900;
+        height: 100%;
+        width: 2em;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
