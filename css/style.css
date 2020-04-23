@@ -798,6 +798,7 @@ hr::before {
   align-items: flex-end;
 }
 .header .logo {
+  width: 100%;
   max-width: 240px;
 }
 .header .logo a {
@@ -1386,6 +1387,42 @@ input[type=submit].button {
   overflow: hidden;
 }
 
+.select {
+  position: relative;
+  display: inline-block;
+}
+.select select {
+  font-size: 14px;
+  font-size: 0.875rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0.75em;
+  padding-right: 4em;
+  font-family: inherit;
+  line-height: inherit;
+  border-radius: 0.25em;
+  border: 1px solid #ddd;
+  color: #000;
+  cursor: pointer;
+}
+.select::after {
+  content: "";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  height: 100%;
+  width: 2em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .autocomplete-items {
   position: absolute;
   top: calc(100% + 1px);
@@ -1446,9 +1483,10 @@ input[type=submit].button {
   padding: 0.75em;
   padding-right: 3em;
   color: #000;
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  font-family: inherit;
 }
 
 .mobile-search {
