@@ -1,6 +1,9 @@
 # Eternity Atom Changelog
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
+## 1.1.4 - 2020-29-04
+- Added mobile_nav event emitting for when a trigger with searchable `0` is clicked. This will now mimic the behavior of a mobile_nav button click, and toggle the dropdown panel. [@kolby](https://github.com/kolbykruger)
+
 ## 1.1.3 - 2020-23-04
 - Added javascript for blog categories dropdown to trigger an href filter [@kolby](https://github.com/kolbykruger)
 - Added select component for global select box styling via the `.select` class [@kolby](https://github.com/kolbykruger)
