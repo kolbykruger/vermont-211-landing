@@ -2,6 +2,7 @@
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
 ## 1.1.5 - 2020-04-05
+- Updated VersionX and Redactor extras [@kolby](https://github.com/kolbykruger)
 - Fixed an issue with `overflow: unset` on the navigation that prevented dropdowns from working in IE. Fixed by updating to `overflow: visible` [@kolby](https://github.com/kolbykruger)
 
 ## 1.1.4 - 2020-29-04
