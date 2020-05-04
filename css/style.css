@@ -755,7 +755,6 @@ hr::before {
 }
 
 .reset {
-  -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   font-family: inherit;
@@ -863,7 +862,7 @@ hr::before {
   z-index: 10;
 }
 .nav ul {
-  overflow: unset;
+  overflow: visible;
   padding: 0;
 }
 .nav ul ul {
