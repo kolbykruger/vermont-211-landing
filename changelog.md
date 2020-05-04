@@ -1,9 +1,10 @@
 # Eternity Atom Changelog
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
-## 1.1.5 - 2020-04-05
+## 1.2.0 - 2020-04-05 `Release`
 - Updated VersionX and Redactor extras [@kolby](https://github.com/kolbykruger)
 - Fixed an issue with `overflow: unset` on the navigation that prevented dropdowns from working in IE. Fixed by updating to `overflow: visible` [@kolby](https://github.com/kolbykruger)
+- Created Vapor `1.2.0` [@kolby](https://github.com/kolbykruger)
 
 ## 1.1.4 - 2020-29-04
 - Added mobile_nav event emitting for when a trigger with searchable `0` is clicked. This will now mimic the behavior of a mobile_nav button click, and toggle the dropdown panel. [@kolby](https://github.com/kolbykruger)
