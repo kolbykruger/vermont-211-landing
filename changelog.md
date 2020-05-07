@@ -1,6 +1,9 @@
 # Eternity Atom Changelog
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
+## 1.2.1 - 2020-07-05
+- Fixed a z-indexing issue with the mobile-nav on IOS Safari/Chrome [@kolby](https://github.com/kolbykruger)
+
 ## 1.2.0 - 2020-04-05 `Release`
 - Updated VersionX and Redactor extras [@kolby](https://github.com/kolbykruger)
 - Fixed an issue with `overflow: unset` on the navigation that prevented dropdowns from working in IE. Fixed by updating to `overflow: visible` [@kolby](https://github.com/kolbykruger)
