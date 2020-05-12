@@ -132,6 +132,10 @@ https://flickity.metafizzy.co
   cursor: pointer;
 }
 
+.flickity-page-dots .dot:only-child {
+    display: none;
+}
+
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
 }
