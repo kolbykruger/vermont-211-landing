@@ -126,4 +126,10 @@ function closeSearchResults(e) {
     
 }
 
-searchAutocomplete();
+document.addEventListener('DOMContentLoaded', function() {
+    for(let i = 0; i < searchInput.length; i++) {
+        searchInput[i].addEventListener('focus', function() {
+            searchAutocomplete()
+        })
+    }
+});
