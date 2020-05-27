@@ -1,6 +1,9 @@
 # Eternity Atom Changelog
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
+## 1.2.2 - 2020-27-05
+- Updated the autocomplete.js script to run on focus of a search input - increasing efficiency [@kolby](https://github.com/kolbykruger)
+
 ## 1.2.1 - 2020-07-05
 - Fixed a z-indexing issue with the mobile-nav on IOS Safari/Chrome [@kolby](https://github.com/kolbykruger)
 
