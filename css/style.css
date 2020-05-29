@@ -382,6 +382,7 @@ https://flickity.metafizzy.co
 .flickity-enabled.is-draggable {
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -489,6 +490,10 @@ https://flickity.metafizzy.co
   border-radius: 50%;
   opacity: 0.25;
   cursor: pointer;
+}
+
+.flickity-page-dots .dot:only-child {
+  display: none;
 }
 
 .flickity-page-dots .dot.is-selected {
@@ -755,6 +760,7 @@ hr::before {
 }
 
 .reset {
+  -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   font-family: inherit;
@@ -858,6 +864,7 @@ hr::before {
 .nav {
   text-align: center;
   -webkit-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   z-index: 10;
 }
@@ -1238,10 +1245,22 @@ footer .ewd img {
   justify-content: center;
 }
 .buttons-center .button + .button {
-  margin: 0 0.5em;
+  margin: 0 0 0 1em;
 }
 .buttons-right {
   justify-content: flex-end;
+}
+
+.button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: #fff;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .button {
@@ -1256,6 +1275,7 @@ footer .ewd img {
   transition: 150ms ease;
   text-decoration: none;
   -webkit-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   cursor: pointer;
 }
@@ -1296,19 +1316,6 @@ footer .ewd img {
   .button, + .button {
     margin: 0 1em 1em 0;
   }
-}
-
-button.button,
-input[type=submit].button {
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  color: #fff;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 
 .social-icons {
@@ -1393,8 +1400,8 @@ input[type=submit].button {
   display: inline-block;
 }
 .select select {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 16px;
+  font-size: 1rem;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1406,6 +1413,12 @@ input[type=submit].button {
   border: 1px solid #ddd;
   color: #000;
   cursor: pointer;
+}
+@media (max-width: 640px) {
+  .select select {
+    font-size: 16px;
+    font-size: 1rem;
+  }
 }
 .select::after {
   content: "";
@@ -1837,6 +1850,7 @@ p.simplesearch-results,
 
 .carousel {
   -webkit-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 .carousel .container {
@@ -1847,6 +1861,7 @@ p.simplesearch-results,
 }
 .carousel .slide {
   -webkit-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   width: 100%;
   position: relative;
@@ -1854,11 +1869,13 @@ p.simplesearch-results,
 }
 .carousel .slide a {
   -webkit-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   text-decoration: none;
 }
 .carousel .slide img {
   -webkit-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   width: 100%;
   height: auto;
@@ -1868,7 +1885,6 @@ p.simplesearch-results,
   width: 100%;
   bottom: 0;
   left: 0;
-  text-align: center;
   color: #fff;
   padding: 2em;
   text-align: center;
@@ -2018,6 +2034,7 @@ p.simplesearch-results,
   width: 100%;
   height: auto;
   -webkit-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   overflow: hidden;
 }
