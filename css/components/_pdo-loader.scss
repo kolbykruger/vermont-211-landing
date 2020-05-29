@@ -22,6 +22,7 @@
         height: 0.75em;
         background: #9880ff;
         border-radius: 50%;
+        transform: translate(0, 0);
         animation: pdo-loader 600ms infinite linear alternate;
         animation-delay: 300ms;
     }
@@ -45,10 +46,12 @@
     @keyframes pdo-loader {
         0% {
             background-color: #9880ff;
+            transform: translate(0, 0);
         }
 
         100% {
             background-color: #ebe6ff;
+            transform: translate(0, 2px);
         }
     }
 }
