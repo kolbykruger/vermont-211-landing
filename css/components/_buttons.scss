@@ -62,20 +62,20 @@ $button-background: $color-1;
     }
 
     // Unique styles
-    &&-reverse {
+    &-reverse {
         background: #fff;
         color: $button-background;
     }
-    &&-ghost {
+    &-ghost {
         background: transparent;
         color: $button-background;
         border: 1px solid $button-background;
     }
-    &&-secondary {
+    &-secondary {
         color: inherit;
         background: rgba(0,0,0,0.25);
     }
-    &&-text {
+    &-text {
         color: $color-1;
         background: transparent;
     }
