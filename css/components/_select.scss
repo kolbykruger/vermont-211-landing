@@ -15,6 +15,11 @@
         border: 1px solid #ddd;
         color: $color-0;
         cursor: pointer;
+
+        //Prevents iOS zoom on focus
+        @media (max-width: 650px) {
+            @include fs(16px);
+        }
     }
 
     &::after {
@@ -34,13 +39,3 @@
         pointer-events: none;
     }
 }
-
-//Prevents iOS zoom on focus
-@media (max-width: 650px) {
-    .select {
-        select {
-            @include fs(16px);
-        }
-    }
-}
-
