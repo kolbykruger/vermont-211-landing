@@ -97,6 +97,16 @@ $button-background: $color-1;
             border-color: $color-2
         }
     }
+    
+    &[disabled] {
+        background: #ddd;
+        color: #aaa;
+
+        &:hover,
+        &:focus {
+            box-shadow: none;
+        }
+    }
 
     @media (max-width: 768px) {
         &,
