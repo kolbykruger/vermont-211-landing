@@ -1472,7 +1472,7 @@ footer .ewd img {
 }
 .pdo-loader::before {
   left: -1.25em;
-  animation-delay: 0;
+  animation-delay: 0ms;
 }
 .pdo-loader::after {
   right: -1.25em;
