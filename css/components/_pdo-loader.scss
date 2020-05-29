@@ -20,7 +20,7 @@
     &::before {
         width: 0.75em;
         height: 0.75em;
-        background: #9880ff;
+        background: $color-1;
         border-radius: 50%;
         transform: translate(0, 0);
         animation: pdo-loader 600ms infinite linear alternate;
@@ -45,12 +45,12 @@
     }
     @keyframes pdo-loader {
         0% {
-            background-color: #9880ff;
+            background-color: $color-1;
             transform: translate(0, 0);
         }
 
         100% {
-            background-color: #ebe6ff;
+            background-color: lighten($color-1, 40%);
             transform: translate(0, 2px);
         }
     }
