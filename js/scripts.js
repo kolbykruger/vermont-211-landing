@@ -50,3 +50,25 @@ $('.carousel .group').flickity({
 
 //Universal Tables
 $('table').wrap("<div class='universal-table'></div>");
+
+//PDO Page loader
+document.addEventListener('DOMContentLoaded', function() {
+    let pdoElement = document.getElementById('pdopage');
+    if (pdoElement) {
+        let loadState = document.createElement('div');
+            loadState.classList.add('pdo-loader');
+            loadState.setAttribute('aria-hidden', true);
+            //loadState.textContent = 'Loading';
+
+        pdoElement.appendChild(loadState);
+
+        if (pdoPage) {
+            pdoPage.callbacks['before'] = function(config) {
+                document.querySelector('.pdo-loader').classList.add('pdo-loading');
+            };
+            pdoPage.callbacks['after'] = function(config) {
+                document.querySelector('.pdo-loader').classList.remove('pdo-loading');
+            };
+        }
+    }
+});
