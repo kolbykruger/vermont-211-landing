@@ -22,7 +22,6 @@
         height: 0.75em;
         background: $color-1;
         border-radius: 50%;
-        transform: translate(0, 0);
         animation: pdo-loader 600ms infinite linear alternate;
         animation-delay: 300ms;
     }
@@ -43,16 +42,14 @@
         right: -1.25em;
         animation-delay: 600ms;
     }
-    
+
     @keyframes pdo-loader {
         0% {
             background-color: $color-1;
-            transform: translate(0, 0);
         }
 
         100% {
-            background-color: lighten($color-1, 40%);
-            transform: translate(0, 2px);
+            background-color: lighten($color-1, 30%);
         }
     }
 }
