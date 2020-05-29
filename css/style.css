@@ -1291,26 +1291,29 @@ footer .ewd img {
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   transform: translateY(1px);
 }
-.button i + span,
-.button span + i {
+.button i + span {
   margin-left: 0.5em;
+}
+.button span + i {
+  margin-left: 1.5em;
 }
 .button-reverse {
   background: #fff;
   color: #ef4538;
+}
+.button-reverse:hover, .button-reverse:focus {
+  background: #fff;
 }
 .button-ghost {
   background: transparent;
   color: #ef4538;
   border: 1px solid #ef4538;
 }
-.button-secondary {
-  color: inherit;
-  background: rgba(0, 0, 0, 0.25);
-}
-.button-text {
-  color: #ef4538;
+.button-ghost:hover, .button-ghost:focus {
   background: transparent;
+  box-shadow: none;
+  color: blue;
+  border-color: blue;
 }
 @media (max-width: 768px) {
   .button, + .button {
@@ -1435,6 +1438,55 @@ footer .ewd img {
   justify-content: center;
   opacity: 0.5;
   pointer-events: none;
+}
+
+.pdo-loader {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 2em auto;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+}
+.pdo-loader.pdo-loading {
+  opacity: 1;
+  z-index: 1;
+  visibility: visible;
+}
+.pdo-loader, .pdo-loader::after, .pdo-loader::before {
+  width: 0.75em;
+  height: 0.75em;
+  background: #9880ff;
+  border-radius: 50%;
+  transform: translate(0, 0);
+  animation: pdo-loader 600ms infinite linear alternate;
+  animation-delay: 300ms;
+}
+.pdo-loader::after, .pdo-loader::before {
+  position: absolute;
+  display: block;
+  content: "";
+}
+.pdo-loader::before {
+  left: -1.25em;
+  animation-delay: 0;
+}
+.pdo-loader::after {
+  right: -1.25em;
+  animation-delay: 600ms;
+}
+@keyframes pdo-loader {
+  0% {
+    background-color: #9880ff;
+    transform: translate(0, 0);
+  }
+  100% {
+    background-color: #ebe6ff;
+    transform: translate(0, 2px);
+  }
 }
 
 .autocomplete-items {
