@@ -9,7 +9,6 @@ $button-background: $color-1;
     flex-flow: row wrap;
     width: 100%;
 
-
     &-center {
         justify-content: center;
 
@@ -67,28 +66,36 @@ $button-background: $color-1;
         transform: translateY(1px);
     }
 
-    i + span,
-    span + i {
+    i + span {
         margin-left: 0.5em;
+    }
+
+    span + i {
+        margin-left: 1.5em;
     }
 
     // Unique styles
     &-reverse {
         background: #fff;
         color: $button-background;
+
+        &:hover,
+        &:focus {
+            background: #fff;
+        }
     }
     &-ghost {
         background: transparent;
         color: $button-background;
         border: 1px solid $button-background;
-    }
-    &-secondary {
-        color: inherit;
-        background: rgba(0,0,0,0.25);
-    }
-    &-text {
-        color: $color-1;
-        background: transparent;
+
+        &:hover,
+        &:focus {
+            background: transparent;
+            box-shadow: none;
+            color: $color-2;
+            border-color: $color-2
+        }
     }
 
     @media (max-width: 768px) {
