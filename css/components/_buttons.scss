@@ -101,7 +101,7 @@ $button-background: $color-1;
     &[disabled] {
         background: $color-grey-1;
         color: $color-0;
-        pointer:default;
+        cursor:default;
 
         &:hover,
         &:focus {
