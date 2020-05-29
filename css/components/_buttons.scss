@@ -14,7 +14,7 @@ $button-background: $color-1;
         justify-content: center;
 
         .button + .button {
-            margin: 0 .5em;
+            margin: 0 0 0 1em;
         }
     }
 
@@ -24,7 +24,18 @@ $button-background: $color-1;
 
 }
 
-
+// Reset styles for all buttons
+.button {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: $button-color;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
 
 .button {
     display: inline-flex;
@@ -86,17 +97,4 @@ $button-background: $color-1;
             margin: 0 1em 1em 0;
         }
     }
-}
-
-button.button,
-input[type="submit"].button {
-    cursor: pointer;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    color: $button-color;
-    border: none;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
 }
