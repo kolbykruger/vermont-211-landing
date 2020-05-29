@@ -3,7 +3,7 @@
     display: inline-block;
 
     select {
-        @include fs(14px);
+        @include fs(16px);
         appearance: none;
             -webkit-appearance: none;
             -moz-appearance: none;
@@ -17,7 +17,7 @@
         cursor: pointer;
 
         //Prevents iOS zoom on focus
-        @media (max-width: 650px) {
+        @media (max-width: 640px) {
             @include fs(16px);
         }
     }
