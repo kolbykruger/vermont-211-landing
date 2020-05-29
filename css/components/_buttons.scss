@@ -99,8 +99,8 @@ $button-background: $color-1;
     }
     
     &[disabled] {
-        background: #ddd;
-        color: #aaa;
+        background: $color-grey-1;
+        color: $color-0;
 
         &:hover,
         &:focus {
