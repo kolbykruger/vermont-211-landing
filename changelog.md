@@ -1,7 +1,7 @@
 # Eternity Atom Changelog
 This changelog was created on 2020-20-01 and is used to keep track of the changes to https://eternityatom.com/.
 
-## 1.2.3 - 2020-31-05
+## 1.2.4 - 2020-31-05
 - reenabled "resource_duplicate" in Client Policy, not sure when it got turned back off [@rob](https://github.com/robliberty)
 
 ## 1.2.3 - 2020-29-05
