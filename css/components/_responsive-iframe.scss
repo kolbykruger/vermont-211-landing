@@ -1,7 +1,13 @@
 .responsive-iframe {
     position: relative;
-    padding-top: 56.25%;
     box-shadow: $box-shadow-1;
+    //max-width: 600px;
+
+    &::before {
+        content: '';
+        display: block;
+        padding-top: 56.25%;
+    }
 
     iframe {
         position: absolute;
