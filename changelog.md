@@ -2,6 +2,10 @@
 
 This changelog was created on 2020-20-01 and is used to keep track of the changes to <https://eternityatom.com/>.
 
+## 1.3.2 - 2020-10-06
+
+- reenabled "menu_trash" in Client Policy to allow clients to empty the trash can [@rob](https://github.com/robliberty)
+
 ## 1.3.1 - 2020-05-06
 
 - Refactored the responsive iframe to allow for `max-width` sizing options [@kolby](https://github.com/kolbykruger)
