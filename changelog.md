@@ -2,6 +2,10 @@
 
 This changelog was created on 2020-20-01 and is used to keep track of the changes to <https://eternityatom.com/>.
 
+## 1.3.3 - 2020-22-06
+
+- Updated `forgot password` setting in MODX to prevent users from clicking it when logging in to MODX [@kolby](https://github.com/kolbykruger)
+
 ## 1.3.2 - 2020-10-06
 
 - reenabled "menu_trash" in Client Policy to allow clients to empty the trash can [@rob](https://github.com/robliberty)
