@@ -347,3 +347,12 @@
     padding-left: 0 !important;
     background-image: none !important;
 }
+
+.fsBody .fsFileUploadButton{
+    cursor:pointer;
+}
+
+.fsBody .fsFileUploadButton[id*='Delete']{
+    background: #ffefef;
+    margin: .25em 0 0;
+}
