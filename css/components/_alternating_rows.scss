@@ -5,46 +5,37 @@
 
     .group {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         flex-flow: row wrap;
-        margin: 0 auto 4em;
-        
+        margin: 0 auto 3em;
+
+        > * {
+            padding: 1em;
+        }
+
         &:last-of-type{
-            margin:0 auto;
+            margin: 0 auto;
         }
 
         &:nth-of-type(even) {
 
             .text {
-                margin-left: 0;
-                margin-right: 2em;
                 order: -1;
-            }
-            
-            .image {
-
-                &:after {
-                    left:auto;
-                    right: -2em;
-                }
             }
         }
 
         .image {
             min-width: 275px;
-            width: 30vw;
-            position: relative;
+            flex: 1;
 
             img {
                 width: 100%;
             }
         }
 
-        .text {
+        .description {
             flex: 1;
-            margin-left: 2em;
             padding: 1em;
-            position: relative;
         }
 
         @media (max-width: 900px) {
@@ -55,8 +46,6 @@
             }
 
             .text {
-                margin-left: 0 !important;
-                margin-right: 0 !important;
                 padding: 1em 0;
             }
         }
