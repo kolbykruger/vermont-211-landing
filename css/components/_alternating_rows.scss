@@ -19,7 +19,7 @@
 
         &:nth-of-type(even) {
 
-            .text {
+            .description {
                 order: -1;
             }
         }
@@ -39,13 +39,11 @@
         }
 
         @media (max-width: 900px) {
-            display: block;
 
-            .image {
+            .image,
+            .description {
+                flex: auto;
                 width: 100%;
-            }
-
-            .text {
                 padding: 1em 0;
             }
         }
