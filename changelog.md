@@ -2,6 +2,9 @@
 
 This changelog was created on 2020-20-01 and is used to keep track of the changes to <https://eternityatom.com/>.
 
+## 1.3.5 - 2020-05-08
+- Added `data-searchable` to mobile nav logic. Adds the dropdown functionality to a non-searchable link [@kolby](https://github.com/kolbykruger)
+
 ## 1.3.4 - 2020-23-06
 
 - Refactored alternating blocks code to work with content blocks class names [@kolby](https://github.com/kolbykruger)
