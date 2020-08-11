@@ -2,6 +2,10 @@
 
 This changelog was created on 2020-20-01 and is used to keep track of the changes to <https://eternityatom.com/>.
 
+## 1.3.6 - 2020-11-08
+
+- reenabled "file_tree" in Client Policy to allow clients to view Files tab [@rob](https://github.com/robliberty)
+
 ## 1.3.5 - 2020-05-08
 - Added `data-searchable` to mobile nav logic. Adds the dropdown functionality to a non-searchable link [@kolby](https://github.com/kolbykruger)
 
