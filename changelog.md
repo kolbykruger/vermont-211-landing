@@ -2,6 +2,9 @@
 
 This changelog was created on 2020-20-01 and is used to keep track of the changes to <https://eternityatom.com/>.
 
+## 1.3.7 - 2020-17-08
+- Refactored footer styling and structure based on new footer design from iSun [@kolby](https://github.com/kolbykruger)
+
 ## 1.3.6 - 2020-11-08
 
 - reenabled "file_tree" in Client Policy to allow clients to view Files tab [@rob](https://github.com/robliberty)
