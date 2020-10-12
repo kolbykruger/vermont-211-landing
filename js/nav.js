@@ -1,5 +1,5 @@
 //Nav
-//$( ".nav ul.top > .trigger, .mobile_nav ul.top > .trigger" ).each(function(){$( this ).children('a:first').attr( "onclick", "return false" );});
+//$( "ul.top .trigger" ).each(function(){$( this ).children('a:first').attr( "onclick", "return false" );});
 
 $('.nav .drop_menu').each(function() {
    if ($(this).find(".item").length >= 8) {
