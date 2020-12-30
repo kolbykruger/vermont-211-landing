@@ -2,6 +2,10 @@
 
 This changelog was created on 2020-20-01 and is used to keep track of the changes to <https://eternityatom.com/>.
 
+## 1.3.10 - 2020-12-30
+
+- re-reenabled “file_tree” in Client Policy to allow clients to view Files tab, this was unchecked again since 11-08 [@rob](https://github.com/robliberty)
+
 ## 1.3.9 - 2020-11-30
 
 - added new "Looking For Help?" Dashboard Widget [@rob](https://github.com/robliberty)
