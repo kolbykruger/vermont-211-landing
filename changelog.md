@@ -2,6 +2,11 @@
 
 This changelog was created on 2020-20-01 and is used to keep track of the changes to <https://eternityatom.com/>.
 
+## 1.3.12 - 2020-02-25
+
+- Fixed broken [[++address_2]] call in Contact template [@rob](https://github.com/robliberty)
+- Added Richtext fallback for empty description meta tag [@rob](https://github.com/robliberty)
+
 ## 1.3.11 - 2020-01-08
 
 - Added new "Vertical Features" and "Button" Content Block icons [@rob](https://github.com/robliberty)
