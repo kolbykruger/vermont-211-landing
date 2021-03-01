@@ -2,6 +2,21 @@
 
 This changelog was created on 2020-20-01 and is used to keep track of the changes to <https://eternityatom.com/>.
 
+## 1.4.0 - 2020-03-01
+- Removed Universal Block chunks and tvs [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
+- Removed Features chunks and tvs [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
+- Removed Slideshow chunks and tvs [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
+- Removed `upload` and `upload from url` buttons on the gallery content block (to avoid duplicate image uploads) [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
+- Removed bloat from some subpages [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
+- Updated navigation trigger dropdown icon [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
+- Updated Extras [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
+- Updated MODX version to `2.8.1` [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
+- Updated gallery content block path for photos to `images/gallery/` to better organize gallery photos [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
+- Updated Heading + Description content block converted to richtext for ease of use [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
+- Added override for inline `figure` and `img` tags for redactor [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
+- Added TikTok to available socials [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
+- Fixed trailing space character in `sitemap.tpl` name [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
+
 ## 1.3.12 - 2020-02-25
 
 - Fixed broken [[++address_2]] call in Contact template [@rob](https://github.com/robliberty)
