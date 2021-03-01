@@ -45,6 +45,12 @@
     &.layout_two_columns {
         max-width: $container-width;
         margin: 0 auto;
+        
+        @media (max-width: 768px) {
+            &.layout_two_columns_right_first {
+                order: -1;
+            }
+        }
 
         .col {
             width: calc(50% - 1.5em);
