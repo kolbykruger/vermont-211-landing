@@ -5,7 +5,7 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 ## 1.4.1 - 2020-03-08
 - Fixed broken og:url call in social_head chunk to prevent it from prepending a 2nd root URL [@rob](https://github.com/robliberty)
 
-## 1.4.0 - 2020-03-01
+## 1.4.0 - 2020-03-01 `Release`
 - Removed Universal Block chunks and tvs [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
 - Removed Features chunks and tvs [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
 - Removed Slideshow chunks and tvs [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
