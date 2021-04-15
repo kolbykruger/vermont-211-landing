@@ -555,28 +555,28 @@ body {
   overflow-x: hidden;
 }
 
-p {
+p, figure figcaption {
   font-size: 16px;
   font-size: 1rem;
   margin: 0 0 1em;
   font-weight: 400;
   line-height: 1.6;
 }
-p {
+p, figure figcaption {
   font-size: 1rem;
 }
 @media screen and (min-width: 38rem) {
-  p {
+  p, figure figcaption {
     font-size: calc(1rem + 0.125 * ((100vw - 38rem) / 32));
   }
 }
 @media screen and (min-width: 70rem) {
-  p {
+  p, figure figcaption {
     font-size: 1.125rem;
   }
 }
 
-p:last-of-type {
+p:last-of-type, figure figcaption:last-of-type {
   margin: 0;
 }
 
@@ -723,12 +723,42 @@ img {
   border: none;
 }
 
+figure {
+  max-width: 100% !important;
+}
+figure img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+figure figcaption {
+  margin-top: 0.5em;
+  font-size: 1rem;
+}
 @media (max-width: 768px) {
   figure[style*=float] {
     float: none !important;
     width: 100% !important;
     margin: 0.5em auto !important;
   }
+}
+
+figure.aspect {
+  position: relative;
+  max-width: 100% !important;
+}
+figure.aspect::before {
+  content: "";
+  display: block;
+  padding-bottom: calc(100% / (var(--aspect-ratio)));
+  background: #fff;
+}
+figure.aspect img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 main {
@@ -768,7 +798,6 @@ hr::before {
 }
 
 .reset {
-  -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   font-family: inherit;
@@ -1168,6 +1197,7 @@ body.menu-open .mobile_nav {
 }
 .footer .ewd {
   width: 200px;
+  line-height: 1;
 }
 .footer .ewd img {
   width: 100%;
@@ -1211,6 +1241,11 @@ body.menu-open .mobile_nav {
 .layout.layout_two_columns {
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .layout.layout_two_columns.layout_two_columns_right_first {
+    order: -1;
+  }
 }
 .layout.layout_two_columns .col {
   width: calc(50% - 1.5em);
@@ -1631,7 +1666,7 @@ body.menu-open .mobile_nav {
 }
 
 /* Search Results */
-p.simplesearch-results,
+p.simplesearch-results, figure figcaption.simplesearch-results,
 .simplesearch-paging {
   margin: 1em auto;
 }

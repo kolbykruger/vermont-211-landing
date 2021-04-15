@@ -25,7 +25,7 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-html[lang="en"] {
+html[lang='en'] {
     opacity: 0;
 }
 
@@ -99,7 +99,6 @@ ul {
 
 ul {
     list-style: outside disc;
-
 }
 
 li {
@@ -128,13 +127,13 @@ blockquote::after {
 }
 
 blockquote::before {
-    content: "\f10d";
+    content: '\f10d';
     left: 0.5em;
     top: 0.5em;
 }
 
 blockquote::after {
-    content: "\f10e";
+    content: '\f10e';
     right: 0.5em;
     bottom: 0.5em;
 }
@@ -152,19 +151,52 @@ img {
 
 figure {
     max-width: 100% !important;
-    
+
     img {
         max-width: 100% !important;
         height: auto !important;
     }
 
+    figcaption {
+        @extend p;
+        margin-top: 0.5em;
+        font-size: 1rem;
+    }
+
     @media (max-width: 768px) {
         //Redactor wraps img tags with a figure
-        &[style*="float"] {
+        &[style*='float'] {
             float: none !important;
             width: 100% !important;
             margin: 0.5em auto !important;
         }
+    }
+}
+
+//Aspect ratio figure stlying
+//Used to prevent CLS for loading images
+//Currently used in the imgCB chunk
+figure.aspect {
+    position: relative;
+    max-width: 100% !important;
+
+    &::before {
+        content: '';
+        display: block;
+        padding-bottom: calc(100% / (var(--aspect-ratio)));
+        background: #fff;
+    }
+
+    picture {
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -173,7 +205,6 @@ main {
 }
 
 article {
-
 }
 
 section {
@@ -186,7 +217,7 @@ section {
     margin: 0 auto;
     padding: 1em;
 
-    & &{
+    & & {
         padding: 0;
     }
 }
@@ -206,7 +237,7 @@ hr {
 hr::before {
     content: '.....';
     letter-spacing: 0.6em;
-    margin: 0 0 0 .6em;
+    margin: 0 0 0 0.6em;
 }
 
 .reset {
@@ -232,11 +263,11 @@ hr::before {
 }
 
 ::selection {
-  background: $color-1;
-  color: #fff;
+    background: $color-1;
+    color: #fff;
 }
 
 ::-moz-selection {
-  background: $color-1;
-  color: #fff;
+    background: $color-1;
+    color: #fff;
 }
