@@ -4,11 +4,12 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 
 ## 1.4.2 - 2020-04-15
 
--   Added styling for `figure.aspect` that prevents CLS when an image is loading. [@kolby](https://github.com/kolbykruger)
+-   Added styling for `figure.aspect` that prevents CLS when an image is loading. This does not work in IE, so it is commented out of the time being. [@kolby](https://github.com/kolbykruger)
 -   Added `imgCB` chunk for processing json data sent from a content block `image + title` field. [@kolby](https://github.com/kolbykruger)
 -   Added `imgUtility` snippet for processing and returning a specific json datapoint based on the key provided in the `imgCB` chunk. [@kolby](https://github.com/kolbykruger)
 -   Refactored `image` to `image + title` fields for Carousel, Slideshow, Alternating Blocks, Features, and Image. [@kolby](https://github.com/kolbykruger)
--   Refactored the `slideshow` image aspect ratio from `3` to `2.5` to make it more accessible. [@kolby](https://github.com/kolbykruger)
+-   Updated `slideshow` image aspect ratio to match `carousel` for unity. [@kolby](https://github.com/kolbykruger)
+-   Fixed an issue where the `image` chunk was not using the cropped version of the photo from the manager. [@kolby](https://github.com/kolbykruger)
 
 ## 1.4.1 - 2020-03-08
 

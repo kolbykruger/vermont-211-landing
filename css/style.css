@@ -555,28 +555,28 @@ body {
   overflow-x: hidden;
 }
 
-p, figure figcaption {
+p, figure:not(.fig) figcaption {
   font-size: 16px;
   font-size: 1rem;
   margin: 0 0 1em;
   font-weight: 400;
   line-height: 1.6;
 }
-p, figure figcaption {
+p, figure:not(.fig) figcaption {
   font-size: 1rem;
 }
 @media screen and (min-width: 38rem) {
-  p, figure figcaption {
+  p, figure:not(.fig) figcaption {
     font-size: calc(1rem + 0.125 * ((100vw - 38rem) / 32));
   }
 }
 @media screen and (min-width: 70rem) {
-  p, figure figcaption {
+  p, figure:not(.fig) figcaption {
     font-size: 1.125rem;
   }
 }
 
-p:last-of-type, figure figcaption:last-of-type {
+p:last-of-type, figure:not(.fig) figcaption:last-of-type {
   margin: 0;
 }
 
@@ -723,19 +723,19 @@ img {
   border: none;
 }
 
-figure {
+figure:not(.fig) {
   max-width: 100% !important;
 }
-figure img {
+figure:not(.fig) img {
   max-width: 100% !important;
   height: auto !important;
 }
-figure figcaption {
+figure:not(.fig) figcaption {
   margin-top: 0.5em;
   font-size: 1rem;
 }
 @media (max-width: 768px) {
-  figure[style*=float] {
+  figure:not(.fig)[style*=float] {
     float: none !important;
     width: 100% !important;
     margin: 0.5em auto !important;
@@ -1666,7 +1666,7 @@ body.menu-open .mobile_nav {
 }
 
 /* Search Results */
-p.simplesearch-results, figure figcaption.simplesearch-results,
+p.simplesearch-results, figure:not(.fig) figcaption.simplesearch-results,
 .simplesearch-paging {
   margin: 1em auto;
 }

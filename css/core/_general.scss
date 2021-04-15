@@ -149,7 +149,7 @@ img {
     border: none;
 }
 
-figure {
+figure:not(.fig) {
     max-width: 100% !important;
 
     img {
