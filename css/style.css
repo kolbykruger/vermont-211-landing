@@ -723,42 +723,23 @@ img {
   border: none;
 }
 
-figure:not(.fig) {
-  max-width: 100% !important;
-}
-figure:not(.fig) img {
-  max-width: 100% !important;
-  height: auto !important;
-}
 figure:not(.fig) figcaption {
   margin-top: 0.5em;
   font-size: 1rem;
 }
+figure:not(.fig):not(.fig) {
+  max-width: 100% !important;
+}
+figure:not(.fig):not(.fig) img {
+  max-width: 100% !important;
+  height: auto !important;
+}
 @media (max-width: 768px) {
-  figure:not(.fig)[style*=float] {
+  figure:not(.fig):not(.fig)[style*=float] {
     float: none !important;
     width: 100% !important;
     margin: 0.5em auto !important;
   }
-}
-
-figure.aspect {
-  position: relative;
-  max-width: 100% !important;
-}
-figure.aspect::before {
-  content: "";
-  display: block;
-  padding-bottom: calc(100% / (var(--aspect-ratio)));
-  background: #fff;
-}
-figure.aspect img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 main {
