@@ -1,3 +1,6 @@
+//LINK KILLER -- Remove after Homepage Design Approval
+$(document).ready(function() {$('a').click(function(e) {e.preventDefault();});})
+
 //Blog Categories (if a selectbox)
 let blogCategories = {
     elem: document.querySelector('select#blog_categories'),
