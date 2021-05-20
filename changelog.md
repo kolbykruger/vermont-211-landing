@@ -2,7 +2,14 @@
 
 This changelog was created on 2020-20-01 and is used to keep track of the changes to <https://eternityatom.com/>.
 
-## 1.4.2 - 2020-04-15
+## 1.4.3 - 2021-05-20
+
+-   Refactored `social_head` to default include metas, even when facebook and twitter links are not specified. This fixes an issue in which a page does not have metas because the facebook/twitter urls were not provided. These "essential" metas should always be included. [@kolby](https://github.com/kolbykruger)
+-   Refactored `social_head` to conditionally include: `fb:admins`, `twitter:creator` and `twitter:site` for when they are provided. [@kolby](https://github.com/kolbykruger)
+-   Refactored `social_head` meta for `url` to have better conditional rendering [@kolby](https://github.com/kolbykruger)
+-   Fixed `twitter:card` meta to be type of card, not card image. It now specifies twitter to show the `summary_large_image` card type. [@kolby](https://github.com/kolbykruger)
+
+## 1.4.2 - 2021-04-15
 
 -   Added styling for `figure.aspect` that prevents CLS when an image is loading. This does not work in IE, so it is commented out of the time being. [@kolby](https://github.com/kolbykruger)
 -   Added `imgCB` chunk for processing json data sent from a content block `image + title` field. [@kolby](https://github.com/kolbykruger)
@@ -11,11 +18,11 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 -   Updated `slideshow` image aspect ratio to match `carousel` for unity. [@kolby](https://github.com/kolbykruger)
 -   Fixed an issue where the `image` chunk was not using the cropped version of the photo from the manager. [@kolby](https://github.com/kolbykruger)
 
-## 1.4.1 - 2020-03-08
+## 1.4.1 - 2021-03-08
 
 -   Fixed broken og:url call in social_head chunk to prevent it from prepending a 2nd root URL [@rob](https://github.com/robliberty)
 
-## 1.4.0 - 2020-03-01 `Release`
+## 1.4.0 - 2021-03-01 `Release`
 
 -   Removed Universal Block chunks and tvs [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
 -   Removed Features chunks and tvs [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
@@ -31,12 +38,12 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 -   Added TikTok to available socials [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
 -   Fixed trailing space character in `sitemap.tpl` name [@rob](https://github.com/robliberty) + [@kolby](https://github.com/kolbykruger)
 
-## 1.3.12 - 2020-02-25
+## 1.3.12 - 2021-02-25
 
 -   Fixed broken [[++address_2]] call in Contact template [@rob](https://github.com/robliberty)
 -   Added Richtext fallback for empty description meta tag [@rob](https://github.com/robliberty)
 
-## 1.3.11 - 2020-01-08
+## 1.3.11 - 2021-01-08
 
 -   Added new "Vertical Features" and "Button" Content Block icons [@rob](https://github.com/robliberty)
 
