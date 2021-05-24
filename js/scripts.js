@@ -30,7 +30,11 @@ var getUrlParameter = function getUrlParameter(sParam) {
     return false;
 };
 var blogCat = getUrlParameter('category');
+if(blogCat){
 $('#blog_categories').val(blogCat);
+}else{
+$('#blog_categories').val($("#blog_categories option:first").val());    
+}
 
 //Responsive iFrame
 $('iframe[src*="youtube"],iframe[src*="vimeo"]').wrap('<div class="responsive-iframe"/>');
