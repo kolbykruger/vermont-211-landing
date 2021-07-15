@@ -2,6 +2,11 @@
 
 This changelog was created on 2020-20-01 and is used to keep track of the changes to <https://eternityatom.com/>.
 
+## 1.4.4 - 2021-07-15
+
+-   Upgraded MODX to 2.8.3. [@rob](https://github.com/robliberty)
+-   Updated ACL Client Policy to include editing/deleting abiltiy for Weblink, Symlink and Static Resources. [@rob](https://github.com/robliberty)
+
 ## 1.4.3 - 2021-05-20
 
 -   Refactored `social_head` to default include metas, even when facebook and twitter links are not specified. This fixes an issue in which a page does not have metas because the facebook/twitter urls were not provided. These "essential" metas should always be included. [@kolby](https://github.com/kolbykruger)
