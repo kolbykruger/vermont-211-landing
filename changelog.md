@@ -2,6 +2,12 @@
 
 This changelog was created on 2020-20-01 and is used to keep track of the changes to <https://eternityatom.com/>.
 
+## 1.4.5 - 2021-08-03
+
+-   Updated jQuery to 3.6.0 [@rob](https://github.com/robliberty)
+-   Added rel="noopener" to Social links [@rob](https://github.com/robliberty)
+-   Hidden Mobile Nav phone icon by default [@rob](https://github.com/robliberty)
+
 ## 1.4.4 - 2021-07-15
 
 -   Upgraded MODX to 2.8.3. [@rob](https://github.com/robliberty)
