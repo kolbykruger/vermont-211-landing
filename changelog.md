@@ -4,7 +4,7 @@ This changelog was created on 2020-20-01 and is used to keep track of the change
 
 ## 1.4.6 - 2021-08-17
 
--   Updated allow_manager_login_forgot_password setting to No to diable the broken "Forgot Password?" link on the login screen [@rob](https://github.com/robliberty)
+-   Updated allow_manager_login_forgot_password setting to "No" to disable the broken "Forgot Password?" link on the login screen [@rob](https://github.com/robliberty)
 
 ## 1.4.5 - 2021-08-03
 
