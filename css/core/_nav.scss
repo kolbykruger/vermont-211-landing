@@ -3,9 +3,18 @@
     user-select: none;
     z-index: 10;
 
+    @media (max-width: 968px) {
+        width: 100%;
+        margin-top: 2em;
+    }
+
     ul {
         overflow: visible;
         padding: 0;
+
+        @media (max-width: 968px) {
+            justify-content: center;
+        }
 
         ul {
             border-top: 4px solid $color-3;
@@ -130,10 +139,10 @@
 
     a.button {
         font-size: 1.5rem;
-    }
 
-    @media (max-width: 900px) {
-        display: none;
+        @media (max-width: 968px) {
+            margin-top: 0.25em;
+        }
     }
 
     .utility {

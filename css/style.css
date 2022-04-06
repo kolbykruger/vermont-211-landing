@@ -642,11 +642,11 @@ h1 {
   font-weight: 400;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 @media screen and (min-width: 38rem) {
   h1 {
-    font-size: calc(2.5rem + 2.5 * ((100vw - 38rem) / 32));
+    font-size: calc(3.5rem + 1.5 * ((100vw - 38rem) / 32));
   }
 }
 @media screen and (min-width: 70rem) {
@@ -660,11 +660,11 @@ h2, .hook-item p.value, .hook-item figure:not(.fig) figcaption.value, figure:not
   font-weight: 400;
 }
 h2, .hook-item p.value, .hook-item figure:not(.fig) figcaption.value, figure:not(.fig) .hook-item figcaption.value, .hook-item .footer .value.address, .footer .hook-item .value.address {
-  font-size: 1.75rem;
+  font-size: 2.75rem;
 }
 @media screen and (min-width: 38rem) {
   h2, .hook-item p.value, .hook-item figure:not(.fig) figcaption.value, figure:not(.fig) .hook-item figcaption.value, .hook-item .footer .value.address, .footer .hook-item .value.address {
-    font-size: calc(1.75rem + 1.75 * ((100vw - 38rem) / 32));
+    font-size: calc(2.75rem + 0.75 * ((100vw - 38rem) / 32));
   }
 }
 @media screen and (min-width: 70rem) {
@@ -678,11 +678,11 @@ h3 {
   font-weight: 400;
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: 2.25rem;
 }
 @media screen and (min-width: 38rem) {
   h3 {
-    font-size: calc(1.25rem + 1.5 * ((100vw - 38rem) / 32));
+    font-size: calc(2.25rem + 0.5 * ((100vw - 38rem) / 32));
   }
 }
 @media screen and (min-width: 70rem) {
@@ -930,6 +930,13 @@ hr::before {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+@media (max-width: 968px) {
+  .header .group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .header .logo {
   width: 100%;
   max-width: 200px;
@@ -1016,9 +1023,22 @@ hr::before {
           user-select: none;
   z-index: 10;
 }
+@media (max-width: 968px) {
+  .nav {
+    width: 100%;
+    margin-top: 2em;
+  }
+}
 .nav ul {
   overflow: visible;
   padding: 0;
+}
+@media (max-width: 968px) {
+  .nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .nav ul ul {
   border-top: 4px solid #ffb351;
@@ -1132,9 +1152,9 @@ hr::before {
 .nav a.button {
   font-size: 1.5rem;
 }
-@media (max-width: 900px) {
-  .nav {
-    display: none;
+@media (max-width: 968px) {
+  .nav a.button {
+    margin-top: 0.25em;
   }
 }
 .nav .utility {
@@ -1604,8 +1624,17 @@ body.menu-open .mobile_nav {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.buttons-center .button,
 .buttons-center .button + .button {
-  margin: 0 0 0 1em;
+  margin: 0 0 0 0.5em;
+}
+@media (max-width: 968px) {
+  .buttons-center .button,
+.buttons-center .button + .button {
+    margin-top: 0.25em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+  }
 }
 .buttons-right {
   -webkit-box-pack: end;
@@ -1651,7 +1680,21 @@ body.menu-open .mobile_nav {
   cursor: pointer;
 }
 .button + .button {
-  margin: 0 0 0 1em;
+  margin: 0 0 0 0.5em;
+}
+@media (max-width: 1200px) {
+  .button + .button {
+    margin-top: 0.25em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+  }
+}
+@media (max-width: 1200px) {
+  .button {
+    margin-top: 0.25em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+  }
 }
 .button:hover, .button:focus {
   background: #006dc4;
@@ -1736,11 +1779,6 @@ body.menu-open .mobile_nav {
 .button[disabled]:hover, .button[disabled]:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-@media (max-width: 768px) {
-  .button, + .button {
-    margin: 0 1em 1em 0;
-  }
 }
 
 .social-icons {
@@ -2515,6 +2553,11 @@ p.simplesearch-results, figure:not(.fig) figcaption.simplesearch-results, .foote
 @media (max-width: 968px) {
   .features .item {
     width: calc(50% - 2em);
+  }
+}
+@media (max-width: 768px) {
+  .features .item {
+    width: calc(100% - 2em);
   }
 }
 .features .item .info {
