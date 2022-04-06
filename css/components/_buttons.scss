@@ -20,7 +20,6 @@ $button-background: $color-1;
     &-right {
         justify-content: flex-end;
     }
-
 }
 
 // Reset styles for all buttons
@@ -40,11 +39,14 @@ $button-background: $color-1;
     display: inline-flex;
     align-items: center;
     margin: 0;
-    padding: 0.75em 1em;
+    padding: 0.66em 1em;
     background: $button-background;
     color: $button-color;
-    border-radius: 0.25em;
+    font-family: $font-1;
+    text-transform: uppercase;
+    font-size: 1.5rem;
     line-height: 1;
+    letter-spacing: 0.025em;
     transition: 150ms ease;
     text-decoration: none;
     user-select: none;
@@ -58,11 +60,12 @@ $button-background: $color-1;
     &:focus {
         background: lighten($button-background, 10%);
         box-shadow: $box-shadow-2;
+        transform: translateY(-1px);
     }
 
     &:active {
         background: darken($button-background, 10%);
-        box-shadow: $box-shadow-2;
+        box-shadow: 0 4px 6px rgba($button-background, 0.11), 0 1px 3px rgba($button-background, 0.08);
         transform: translateY(1px);
     }
 
@@ -71,7 +74,7 @@ $button-background: $color-1;
     }
 
     span + i {
-        margin-left: 1.5em;
+        margin-left: 1em;
     }
 
     // Unique styles
@@ -94,14 +97,56 @@ $button-background: $color-1;
             background: transparent;
             box-shadow: none;
             color: $color-2;
-            border-color: $color-2
+            border-color: $color-2;
         }
     }
-    
+    &-secondary {
+        background: $color-2;
+        color: lighten($color-0, 5%);
+
+        &:hover,
+        &:focus {
+            background: darken($color-2, 10%);
+            box-shadow: 0 4px 6px rgba($color-2, 0.11), 0 1px 3px rgba($color-2, 0.08);
+        }
+    }
+    &-tertiary {
+        background: $color-3;
+        color: lighten($color-0, 5%);
+
+        &:hover,
+        &:focus {
+            background: darken($color-3, 10%);
+            box-shadow: 0 4px 6px rgba($color-3, 0.11), 0 1px 3px rgba($color-3, 0.08);
+        }
+    }
+
+    &-text {
+        background: none;
+        color: $color-0;
+        border: 3px solid $color-0;
+        padding: calc(0.66em - 3px) calc(1em - 3px);
+
+        &.button-size-small {
+            padding: calc(0.44em - 3px) calc(0.66em - 3px);
+        }
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            background: $color-0;
+            box-shadow: 0 4px 6px rgba($color-0, 0.11), 0 1px 3px rgba($color-0, 0.08);
+        }
+    }
+
+    &-size-small {
+        padding: 0.44em 0.66em;
+    }
+
     &[disabled] {
         background: $color-grey-1;
         color: $color-0;
-        cursor:default;
+        cursor: default;
 
         &:hover,
         &:focus {
@@ -111,7 +156,7 @@ $button-background: $color-1;
 
     @media (max-width: 768px) {
         &,
-        + &{
+        + & {
             margin: 0 1em 1em 0;
         }
     }

@@ -1,0 +1,60 @@
+.brand-slider {
+    position: relative;
+    margin: 6em auto;
+
+    .container {
+    }
+
+    .section-heading {
+        text-align: center;
+    }
+
+    .flickity-viewport {
+        width: 100%;
+    }
+
+    .flickity-prev-next-button {
+        background: none;
+        z-index: 2;
+
+        &.previous {
+            left: -4vw;
+
+            @media (max-width: 1400px) {
+                left: 2vw;
+            }
+        }
+
+        &.next {
+            right: -4vw;
+
+            @media (max-width: 1400px) {
+                right: 2vw;
+            }
+        }
+
+        svg path {
+            fill: $color-0;
+        }
+    }
+
+    &-rail {
+        width: 100%;
+    }
+
+    .brand-item {
+        width: 16.666%;
+        height: 100%;
+        max-height: 200px;
+        margin: 1em;
+        background: $color-grey-1;
+
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            padding: 0.75em;
+            mix-blend-mode: multiply;
+        }
+    }
+}

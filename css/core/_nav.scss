@@ -8,24 +8,35 @@
         padding: 0;
 
         ul {
-            border-radius: 0.25em;
+            border-top: 4px solid $color-3;
             padding: 0;
             left: 0;
             opacity: 0;
             position: absolute;
             top: -9999px;
-            background: #fff;
+            background: $color-3;
             white-space: nowrap;
             min-width: 200px;
-            box-shadow: $box-shadow-2;
+            max-width: 100vw;
+            box-shadow: $box-shadow-1;
             text-align: left;
             transition: opacity 0.35s;
             overflow: hidden;
 
+            &.column-nav {
+                column-count: 2;
+            }
+
             a {
-                @include fs(13px);
-                padding: 10px;
+                @include fs(16px);
+                padding: 1em;
                 margin: 0;
+                font-family: $font-0;
+                font-weight: 600;
+
+                &:not(.button) {
+                    color: $color-0;
+                }
 
                 &:hover,
                 &:focus {
@@ -41,7 +52,17 @@
         align-items: center;
 
         > li {
-            margin: 0 0 0 32px;
+            margin: 0 0 0 2em;
+
+            > a {
+                text-transform: uppercase;
+            }
+        }
+
+        &.utility {
+            > li {
+                margin: 0 0 0 0.75em;
+            }
         }
 
         li:last-child ul {
@@ -55,26 +76,36 @@
         position: relative;
         display: block;
 
-        &.open {
+        &.trigger {
+            margin: 0 -0.5em 0 1.5em;
 
             > a {
-                color: $color-1;
+                padding: 0.5em;
+
+                &:hover,
+                &:focus {
+                    color: $color-0;
+                }
+            }
+        }
+
+        &.open {
+            > a {
+                color: $color-0;
+                background: $color-3;
             }
 
             ul {
-                top: calc(100% + 4px);
+                top: calc(100% - 4px);
                 opacity: 1;
                 z-index: 10;
             }
         }
     }
 
-    a {
-        @include fs(16px);
+    a:not(.button) {
         display: block;
         color: $color-0;
-        text-decoration: none;
-        transition: $transition-1;
 
         &:hover,
         &:focus {
@@ -82,13 +113,34 @@
         }
 
         i {
-            @include fs(12px);
+            @include fs(16px);
             cursor: pointer;
             margin: 0 0 0 6px;
+            transform: translateY(-3px);
         }
+    }
+
+    a {
+        @include fs(30px);
+        text-decoration: none;
+        transition: $transition-1;
+        font-family: $font-1;
+        line-height: 1;
+    }
+
+    a.button {
+        font-size: 1.5rem;
     }
 
     @media (max-width: 900px) {
         display: none;
+    }
+
+    .utility {
+        justify-content: flex-end;
+        margin-bottom: 1.5em;
+
+        li {
+        }
     }
 }

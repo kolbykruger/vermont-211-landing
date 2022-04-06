@@ -1,9 +1,23 @@
 .header {
+    background: #fff;
+    padding-top: 0.625em;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0.625em;
+        background: $color-2;
+        background: linear-gradient(to right, darken($color-1, 1%), lighten($color-2, 1%));
+    }
 
     .container {
         position: relative;
         max-width: $container-width;
         width: 100%;
+        padding: 2em 1em 1em;
     }
 
     .group {
@@ -12,8 +26,8 @@
     }
 
     .logo {
-        width:100%;
-        max-width: 240px;
+        width: 100%;
+        max-width: 200px;
 
         a {
             display: block;
@@ -79,5 +93,4 @@
             height: 100%;
         }
     }
-
 }

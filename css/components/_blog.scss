@@ -44,11 +44,6 @@
 
     }
 
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
     .post {
         width: calc(33.333% - 2em);
         margin: 1em;
@@ -57,9 +52,14 @@
         background: #fff;
         transition: $transition-1;
 
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
         &:hover,
         &:focus{
-            box-shadow: $box-shadow-2;
+            box-shadow: $box-shadow-1;
         }
     }
 
@@ -83,7 +83,6 @@
     }
 
     .title {
-        @include fs(24px);
         margin: 0;
     }
 
